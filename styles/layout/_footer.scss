@@ -1,0 +1,20 @@
+.footer{
+    font-family: 'Raleway',italic;
+    font-size:0.9rem;
+    background-color:$blackColor;
+    color:$whiteColor;
+    padding:$padding - 10;
+    font-weight: 400;
+    .footer__content{
+        display:flex;
+        justify-content: space-between;
+        p{
+            margin-left:75px;
+        }
+        ul{
+            display:flex;
+            gap:2rem;
+            margin-right:65px;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.information {
+    height: 300px;
+    width: 100%;
+    background-color: $greenColor;
+
+    .navbar__logo {
+        @include alignCenter();
+        position: relative;
+        font-size: 3.3rem;
+        margin-left: 4rem;
+        font-weight: 500;
+        color: $blackColor;
+        height: 52px;
+        width: 120px;
+
+        h1 {
+            z-index:100;
+            margin-top:50px;
+        }
+
+        .navbar__shadow {
+            position: absolute;
+            background-color: $whiteColor;
+            height: 28px;
+            width: 100px;
+            bottom: -140%;
+        }
+
+    }
+}
