@@ -1,0 +1,66 @@
+.contact-form {
+    height: 200px;
+    padding: 100px;
+    font-family: 'Raleway', italic;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-form__content {
+        max-width: 700px;
+        line-height: 1.3rem;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        color: $blackColor;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.08rem;
+        font-weight: 500;
+        padding: 2rem;
+    }
+
+    input {
+        height: 46px;
+        width: 80%;
+        background: #FEFEFE;
+        border: 1px solid #FEFEFE;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 12px;
+    }
+
+    a {
+        position: absolute;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.2rem;
+        line-height: 28px;
+        text-align: center;
+        text-transform: uppercase;
+        left: 945px;
+        top: 2802px;
+        background-color: $greenColor;
+        color: $blackColor;
+        padding: 5px 20px 5px 20px;
+        border-radius: 10px;
+    }
+
+    label {
+        color: rgba(51, 51, 51, 0.7);
+        top: 2810px;
+        left: 495px;
+        position: absolute;
+        font-family: 'Raleway';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+
+    }
+}
