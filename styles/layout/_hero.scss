@@ -1,0 +1,41 @@
+.hero {
+    position: relative;
+
+    .hero-picture {
+        position: absolute;
+        background-image: url('../img/Rectangle\ 4.png');
+        height: 640px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: -1;
+    }
+
+    .hero-section__content {
+        border-left: 24px solid $greenColor ;
+        height: 8.5rem;
+        width: 25.5rem;
+        margin: 11% 60% 10% 10.5%;
+        padding: 1.125rem;
+        z-index: 1;
+        background-color: $blackColor;
+        color: $whiteColor;
+        position: absolute;
+
+        .hero-section__title {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-top: 1.125rem;
+            margin-bottom: 1.8rem;
+
+        }
+
+        .hero-section__text {
+            font-family: 'Raleway';
+            font-size: 0.85rem;
+            font-weight: 300;
+        }
+
+    }
+
+}
