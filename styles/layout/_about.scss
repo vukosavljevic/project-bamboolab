@@ -1,11 +1,9 @@
 .about {
     margin-top: 41%;
-    font-family: 'Raleway', italic;
-
     .about__content {
         .about__content-title {
             font-size: 2.525rem;
-            font-weight: 700;
+            font-weight: $largeW;
             text-align: center;
         }
 
@@ -16,7 +14,7 @@
             gap: 20px;
             svg{
                 z-index: 3;
-                padding:20px;
+                padding:$padding;
             }
             .single-card{
                 position: relative;
@@ -27,7 +25,7 @@
                 font-size:1.1.125rem;
                 box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.34);
                 h4{
-                    font-weight: 400;
+                    font-weight: $smallW;
                 }
                 .single-card__bg{
                     position: absolute;
@@ -35,24 +33,24 @@
                     width:100px;
                     height: 100px;
                     background-color: $greenColor ;
-                    border-radius: 50px;
+                    border-radius: $circle;
                 }
                 .single-card__title{
                     display: flex;
                     .single-card__title-text{
                         padding:25px 30px 0 20px;
                         h1{
-                            font-weight: 600;
+                            font-weight: $middleW;
                             font-size: 1.225rem;
                         }
                         h4{
-                            padding-top:10px;
+                            padding-top:$padding - 10;
                             font-size: 1.3rem;
                         }
                     }
                 }
                 p{
-                   padding-top:20px;
+                   padding-top:$padding;
                 }
             }
         }

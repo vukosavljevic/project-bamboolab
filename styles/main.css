@@ -135,7 +135,8 @@ a {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway';
+  font-weight: italic;
   font-size: 13px;
   line-height: 1rem;
 }
@@ -248,14 +249,12 @@ body {
 }
 
 .hero .hero-section__content .hero-section__text {
-  font-family: 'Raleway';
   font-size: 0.85rem;
   font-weight: 300;
 }
 
 .about {
   margin-top: 41%;
-  font-family: 'Raleway', italic;
 }
 
 .about .about__content .about__content-title {
@@ -350,7 +349,9 @@ body {
 }
 
 .examples .examples__content .examples__content-text .card {
-  display: Flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 1rem;
 }
 
@@ -378,6 +379,37 @@ body {
   border-left: 25px solid #87DE87;
 }
 
+.examples .examples__content .examples__content-spacing .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+}
+
+.examples .examples__content .examples__content-spacing .card .card-text {
+  font-size: 0.85rem;
+  line-height: 1.125rem;
+  min-width: 560px;
+  font-weight: 300;
+}
+
+.examples .examples__content .examples__content-spacing .card h1 {
+  font-weight: 500;
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+
+.examples .examples__content .examples__content-spacing .card img {
+  max-width: 600px;
+  height: 400px;
+  border-right: 25px solid #87DE87;
+}
+
+.examples .examples__content .examples__content-spacing .card .card-image {
+  border: none;
+  border-left: 25px solid #87DE87;
+}
+
 .examples .examples__content a {
   background-color: #87DE87;
   padding: 20px 55px 20px 55px;
@@ -394,17 +426,16 @@ body {
 .contact-form {
   height: 200px;
   padding: 100px;
-  font-family: 'Raleway', italic;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contact-form .contact-form__content {
@@ -456,8 +487,6 @@ body {
   top: 2810px;
   left: 495px;
   position: absolute;
-  font-family: 'Raleway';
-  font-style: italic;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -465,10 +494,13 @@ body {
 }
 
 .information {
-  font-family: 'Raleway',italic;
   height: 350px;
   width: 100%;
   background-color: #87DE87;
+}
+
+.information a {
+  color: #333333;
 }
 
 .information .navbar__logo {
@@ -591,6 +623,7 @@ body {
 
 .information .information__content-flex .second-card_icons .single-card__bg1 {
   position: absolute;
+  margin-left: 0px;
   z-index: 2;
   width: 50px;
   height: 50px;
@@ -629,7 +662,6 @@ body {
 }
 
 .footer {
-  font-family: 'Raleway',italic;
   font-size: 0.9rem;
   background-color: #333333;
   color: #FFFFFF;
@@ -644,6 +676,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .footer__content p {

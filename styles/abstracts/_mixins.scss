@@ -1,4 +1,40 @@
-@mixin alignCenter{
-    display:flex;
+@mixin alignCenter {
+    display: flex;
     align-items: center;
+}
+
+@mixin spaceBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin icons($bottom, $right) {
+    padding: 15px;
+    z-index: 4;
+    position: absolute;
+    right: $right + px;
+    bottom: $bottom + px;
+}
+
+@mixin iconBackground($margin-left) {
+    position: absolute;
+    margin-left: $margin-left + px;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    background-color: $blackColor ;
+    border-radius: $circle;
+}
+
+@mixin listFooter() {
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+@mixin headingFooter($fontSize) {
+    font-size: $fontSize + rem;
+    font-weight: 600;
+    padding-bottom: 7px;
 }

@@ -1,18 +1,16 @@
 .footer{
-    font-family: 'Raleway',italic;
     font-size:0.9rem;
     background-color:$blackColor;
     color:$whiteColor;
     padding:$padding - 10;
-    font-weight: 400;
+    font-weight: $smallW;
     .footer__content{
-        display:flex;
-        justify-content: space-between;
+        @include spaceBetween();
         p{
             margin-left:75px;
         }
         ul{
-            display:flex;
+            display:$displayFlex;
             gap:2rem;
             margin-right:65px;
         }

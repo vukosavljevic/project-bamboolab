@@ -1,9 +1,10 @@
 .information {
-    font-family: 'Raleway',italic;
     height: 350px;
     width: 100%;
     background-color: $greenColor;
-
+    a{
+        color:$blackColor;
+    }
     .navbar__logo {
         @include alignCenter();
         position: relative;
@@ -29,7 +30,7 @@
         }
     }
     .information__content-flex{
-        display:flex;
+        display:$displayFlex;
         margin-top:14vh;
         font-size: 1.2rem;
         gap:5rem;
@@ -40,99 +41,50 @@
                 padding-bottom: 10px;
             }
             h2{
-                font-size: 0.8rem;
-                font-weight: 600;
-                padding-bottom: 7px;
+                @include headingFooter(0.8);
             }
             li{
-                line-height: 1.5rem;
-                font-size:1rem;
-                font-weight: 300;
+                @include listFooter();
             }
         }
         .second-card{
             margin-left:12rem;
             li{
-                line-height: 1.5rem;
-                font-size:1rem;
-                font-weight: 300;
+                @include listFooter();
             }
             h2{
-                font-size: 0.9rem;
-                font-weight: 600;
-                padding-bottom: 7px;
+                @include headingFooter(0.9);
             }
         }
         .second-card_icons{
             margin-left:12rem;
             
                 .facebook-icon{
-                    padding:15px;
-                    z-index: 4;
-                    position: absolute;
-                    right:329px;
-                    bottom:-2462px;
+                    @include icons(-2462,329);
                 }
                 .twitter-icon{
-                    padding:15px;
-                    z-index: 4;
-                    position: absolute;
-                    right:269px;
-                    bottom:-2462px;
+                    @include icons(-2462,269);
                 }
                 .youtube-icon{
-                    padding:15px;
-                    z-index: 4;
-                    position: absolute;
-                    right:207px;
-                    bottom:-2462px;
+                    @include icons(-2462,207);
                 }
                 .linkedin-icon{
-                    padding:15px;
-                    z-index: 4;
-                    position: absolute;
-                    right:150px;
-                    bottom:-2459px;
+                    @include icons(-2459,150);
                 }
                 h2{
-                    font-size: 0.9rem;
-                    font-weight: 600;
-                    padding-bottom: 7px;
+                    @include headingFooter(0.9);
                 }
                 .single-card__bg1{
-                position: absolute;
-                    z-index: 2;
-                    width:50px;
-                    height:50px;
-                    background-color: $blackColor ;
-                    border-radius: 50px;
+                   @include iconBackground(0); 
             }
             .single-card__bg2{
-                position: absolute;
-                margin-left:60px;
-                z-index: 2;
-                width:50px;
-                height:50px;
-                background-color: $blackColor ;
-                border-radius: 50px;
+                @include iconBackground(60); 
             }
             .single-card__bg3{
-                position: absolute;
-                margin-left:120px;
-                z-index: 2;
-                width:50px;
-                height:50px;
-                background-color: $blackColor ;
-                border-radius: 50px;
+                @include iconBackground(120);
             }
             .single-card__bg4{
-                position: absolute;
-                margin-left:180px;
-                z-index: 2;
-                width:50px;
-                height:50px;
-                background-color: $blackColor ;
-                border-radius: 50px;
+                @include iconBackground(180);
             }
         }
     }

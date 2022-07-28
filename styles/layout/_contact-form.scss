@@ -1,11 +1,9 @@
 .contact-form {
     height: 200px;
     padding: 100px;
-    font-family: 'Raleway', italic;
     text-align: center;
-    display: flex;
+    @include alignCenter();
     justify-content: center;
-    align-items: center;
 
     .contact-form__content {
         max-width: 700px;
@@ -16,7 +14,7 @@
         text-align: center;
         font-size: 2.5rem;
         color: $blackColor;
-        font-weight: 700;
+        font-weight: $largeW;
     }
 
     p {
@@ -37,7 +35,7 @@
     a {
         position: absolute;
         font-style: normal;
-        font-weight: 700;
+        font-weight: $largeW;
         font-size: 1.2rem;
         line-height: 28px;
         text-align: center;
@@ -55,8 +53,6 @@
         top: 2810px;
         left: 495px;
         position: absolute;
-        font-family: 'Raleway';
-        font-style: italic;
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;

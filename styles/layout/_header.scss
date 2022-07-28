@@ -1,9 +1,7 @@
 .navbar {
-    background-color: #87DE87;
+    background-color: $greenColor;
     height: 42px;
-    display: $displayFlex;
-    justify-content: space-between;
-    align-items: center;
+    @include spaceBetween();
     padding: $padding;
     a{
         color:$blackColor;
@@ -13,7 +11,7 @@
         position: relative;
         font-size: 1.7rem;
         margin-left: 4rem;
-        font-weight: 500;
+        font-weight:  $smallMidW;
         color: $blackColor;
         height: 52px;
         width: 120px;
@@ -33,7 +31,7 @@
         @include alignCenter();
         color: $blackColor;
         margin-right: 4.5rem;
-        font-weight: 600;
+        font-weight:$middleW;
         gap: $gap;
         .navbar__list {
             display: $displayFlex;
@@ -42,7 +40,7 @@
         .navbar__item-button{
             color: $blackColor;
             background-color: $whiteColor;
-            font-weight: 700 !important;
+            font-weight:$largeW !important;
             padding: 8px;
         }
     }
