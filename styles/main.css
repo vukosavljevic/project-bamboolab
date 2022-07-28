@@ -465,7 +465,8 @@ body {
 }
 
 .information {
-  height: 300px;
+  font-family: 'Raleway',italic;
+  height: 350px;
   width: 100%;
   background-color: #87DE87;
 }
@@ -488,15 +489,143 @@ body {
 
 .information .navbar__logo h1 {
   z-index: 100;
-  margin-top: 50px;
+  margin: 150px 0 0 10px;
 }
 
 .information .navbar__logo .navbar__shadow {
   position: absolute;
   background-color: #FFFFFF;
-  height: 28px;
-  width: 100px;
-  bottom: -140%;
+  height: 58px;
+  width: 200px;
+  right: -73%;
+  bottom: -100%;
+}
+
+.information .information__content-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 14vh;
+  font-size: 1.2rem;
+  gap: 5rem;
+}
+
+.information .information__content-flex .single-card {
+  margin-left: 5rem;
+}
+
+.information .information__content-flex .single-card h1 {
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.information .information__content-flex .single-card h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
+.information .information__content-flex .single-card li {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.information .information__content-flex .second-card {
+  margin-left: 12rem;
+}
+
+.information .information__content-flex .second-card li {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.information .information__content-flex .second-card h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
+.information .information__content-flex .second-card_icons {
+  margin-left: 12rem;
+}
+
+.information .information__content-flex .second-card_icons .facebook-icon {
+  padding: 15px;
+  z-index: 4;
+  position: absolute;
+  right: 329px;
+  bottom: -2462px;
+}
+
+.information .information__content-flex .second-card_icons .twitter-icon {
+  padding: 15px;
+  z-index: 4;
+  position: absolute;
+  right: 269px;
+  bottom: -2462px;
+}
+
+.information .information__content-flex .second-card_icons .youtube-icon {
+  padding: 15px;
+  z-index: 4;
+  position: absolute;
+  right: 207px;
+  bottom: -2462px;
+}
+
+.information .information__content-flex .second-card_icons .linkedin-icon {
+  padding: 15px;
+  z-index: 4;
+  position: absolute;
+  right: 150px;
+  bottom: -2459px;
+}
+
+.information .information__content-flex .second-card_icons h2 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 7px;
+}
+
+.information .information__content-flex .second-card_icons .single-card__bg1 {
+  position: absolute;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 50px;
+}
+
+.information .information__content-flex .second-card_icons .single-card__bg2 {
+  position: absolute;
+  margin-left: 60px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 50px;
+}
+
+.information .information__content-flex .second-card_icons .single-card__bg3 {
+  position: absolute;
+  margin-left: 120px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 50px;
+}
+
+.information .information__content-flex .second-card_icons .single-card__bg4 {
+  position: absolute;
+  margin-left: 180px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background-color: #333333;
+  border-radius: 50px;
 }
 
 .footer {
