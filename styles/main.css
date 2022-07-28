@@ -348,66 +348,9 @@ body {
   padding: 2.725rem 2.725rem 0 2.725rem;
 }
 
-.examples .examples__content .examples__content-text .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 1rem;
-}
-
-.examples .examples__content .examples__content-text .card .card-text {
-  font-size: 0.85rem;
-  line-height: 1.125rem;
-  min-width: 560px;
-  font-weight: 300;
-}
-
-.examples .examples__content .examples__content-text .card h1 {
-  font-weight: 500;
-  font-size: 1.9rem;
-  padding-bottom: 1rem;
-}
-
-.examples .examples__content .examples__content-text .card img {
-  max-width: 600px;
-  height: 400px;
-  border-right: 25px solid #87DE87;
-}
-
-.examples .examples__content .examples__content-text .card .card-image {
-  border: none;
-  border-left: 25px solid #87DE87;
-}
-
-.examples .examples__content .examples__content-spacing .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 1rem;
-}
-
-.examples .examples__content .examples__content-spacing .card .card-text {
-  font-size: 0.85rem;
-  line-height: 1.125rem;
-  min-width: 560px;
-  font-weight: 300;
-}
-
-.examples .examples__content .examples__content-spacing .card h1 {
-  font-weight: 500;
-  font-size: 1.9rem;
-  padding-bottom: 1rem;
-}
-
-.examples .examples__content .examples__content-spacing .card img {
-  max-width: 600px;
-  height: 400px;
-  border-right: 25px solid #87DE87;
-}
-
-.examples .examples__content .examples__content-spacing .card .card-image {
-  border: none;
-  border-left: 25px solid #87DE87;
+.examples .examples__content .examples__content-spacing {
+  position: absolute;
+  right: 60px;
 }
 
 .examples .examples__content a {
@@ -419,7 +362,7 @@ body {
 }
 
 .examples .examples__content .button {
-  padding-top: 75px;
+  padding-top: 600px;
   text-align: center;
 }
 
@@ -691,5 +634,37 @@ body {
   display: flex;
   gap: 2rem;
   margin-right: 65px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 1rem;
+  gap: 2rem;
+}
+
+.card .card-text {
+  font-size: 0.85rem;
+  line-height: 1.125rem;
+  min-width: 560px;
+  font-weight: 300;
+}
+
+.card h1 {
+  font-weight: 500;
+  font-size: 1.9rem;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  max-width: 600px;
+  height: 400px;
+  border-right: 25px solid #87DE87;
+}
+
+.card .card-image {
+  border: none;
+  border-left: 25px solid #87DE87;
 }
 /*# sourceMappingURL=main.css.map */
