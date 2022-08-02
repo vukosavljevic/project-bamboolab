@@ -531,7 +531,7 @@ body {
   z-index: 4;
   position: absolute;
   right: 329px;
-  bottom: -2462px;
+  bottom: -2447px;
 }
 
 .information .information__content-flex .second-card_icons .twitter-icon {
@@ -539,23 +539,23 @@ body {
   z-index: 4;
   position: absolute;
   right: 269px;
-  bottom: -2462px;
-}
-
-.information .information__content-flex .second-card_icons .youtube-icon {
-  padding: 15px;
-  z-index: 4;
-  position: absolute;
-  right: 207px;
-  bottom: -2462px;
+  bottom: -2447px;
 }
 
 .information .information__content-flex .second-card_icons .linkedin-icon {
   padding: 15px;
   z-index: 4;
   position: absolute;
+  right: 207px;
+  bottom: -2446px;
+}
+
+.information .information__content-flex .second-card_icons .youtube-icon {
+  padding: 15px;
+  z-index: 4;
+  position: absolute;
   right: 150px;
-  bottom: -2459px;
+  bottom: -2443px;
 }
 
 .information .information__content-flex .second-card_icons h2 {

@@ -60,16 +60,16 @@
             margin-left:12rem;
             
                 .facebook-icon{
-                    @include icons(-2462,329);
+                    @include icons(-2447,329);
                 }
                 .twitter-icon{
-                    @include icons(-2462,269);
-                }
-                .youtube-icon{
-                    @include icons(-2462,207);
+                    @include icons(-2447,269);
                 }
                 .linkedin-icon{
-                    @include icons(-2459,150);
+                    @include icons(-2446,207);
+                }
+                .youtube-icon{
+                    @include icons(-2443,150);
                 }
                 h2{
                     @include headingFooter(0.9);
