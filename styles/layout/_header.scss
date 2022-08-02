@@ -13,23 +13,6 @@
         position: relative;
         font-size: 1.7rem;
         margin-left: 4rem;
-        font-weight: $font-weight--midsmall;
-        color: $color--black;
-        height: 52px;
-        width: 120px;
-
-        h1 {
-            z-index: 100;
-        }
-
-        .navbar__shadow {
-            position: absolute;
-            background-color: $color--white;
-            height: 28px;
-            width: 100px;
-            bottom: 42%;
-        }
-
     }
 
     .navbar__items {
@@ -48,7 +31,7 @@
             color: $color--black;
             background-color: $color--white;
             font-weight: $font-weight--large  !important;
-            padding: 8px;
+            padding: 0.5rem;
         }
     }
 
