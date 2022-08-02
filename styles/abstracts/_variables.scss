@@ -1,12 +1,11 @@
-    $fontSize: 13px;
-    $padding: 20px;
-    $blackColor: #333333; // bg color
-    $whiteColor: #FFFFFF; // bg and font color
-    $greenColor :#87DE87; // border color
-    $displayFlex: flex; //basic flex
-    $gap: 1.125rem; //gap for cards
-    $smallW : 400; //font weight
-    $smallMidW:500; //font weight
-    $middleW : 600; //font weight
-    $largeW : 700; 
-    $circle : 50px //borrder radius
+    $fontSize: 0.8125rem;
+    $padding: 1.25rem;
+    $color--black: #333333;
+    $color--white: #FFFFFF;
+    $color--green :#87DE87;
+    $gap: 1.125rem;
+    $font-weight--small : 400;
+    $font-weight--midsmall: 500;
+    $font-weight--mid : 600;
+    $font-weight--large : 700;
+    $circle : 50px;

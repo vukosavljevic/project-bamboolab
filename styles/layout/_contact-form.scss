@@ -1,6 +1,6 @@
 .contact-form {
-    height: 200px;
-    padding: 100px;
+    height: 12.5rem;
+    padding: 6.25rem;
     text-align: center;
     @include alignCenter();
     justify-content: center;
@@ -8,13 +8,57 @@
     .contact-form__content {
         max-width: 700px;
         line-height: 1.3rem;
+
+        .form {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            background: #FEFEFE;
+            justify-content: center;
+            border: 1px solid #FEFEFE;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            width: 550px;
+
+            input {
+                height: 46px;
+                flex-grow: 2;
+                border: none;
+            }
+
+            a {
+                font-weight: $font-weight--large ;
+                font-size: 1.2rem;
+                line-height: 1.75rem;
+                @include alignCenter();
+                background-color: $color--green;
+                color: $color--black;
+                margin: 0.3125rem 0.3125rem 0.3125rem 0;
+                padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
+                border-radius: 10px;
+            }
+
+            ::placeholder {
+                font-style: 'Raleway';
+                font-weight: inherit;
+                color: rgba(51, 51, 51, 0.7);
+                font-weight: 400;
+                line-height: 1.3125rem;
+                padding-left: 1.25rem;
+
+            }
+        }
     }
 
     h1 {
         text-align: center;
         font-size: 2.5rem;
-        color: $blackColor;
-        font-weight: $largeW;
+        color: $color--black;
+        font-weight: $font-weight--large;
     }
 
     p {
@@ -23,40 +67,4 @@
         padding: 2rem;
     }
 
-    input {
-        height: 46px;
-        width: 80%;
-        background: #FEFEFE;
-        border: 1px solid #FEFEFE;
-        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
-        border-radius: 12px;
-    }
-
-    a {
-        position: absolute;
-        font-style: normal;
-        font-weight: $largeW;
-        font-size: 1.2rem;
-        line-height: 28px;
-        text-align: center;
-        text-transform: uppercase;
-        left: 945px;
-        top: 2802px;
-        background-color: $greenColor;
-        color: $blackColor;
-        padding: 5px 20px 5px 20px;
-        border-radius: 10px;
-    }
-
-    label {
-        color: rgba(51, 51, 51, 0.7);
-        top: 2810px;
-        left: 495px;
-        position: absolute;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-
-    }
 }

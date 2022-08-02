@@ -1,33 +1,34 @@
-.examples{
+.examples {
     font-family: 'Raleway', italic;
-    color:$whiteColor;
-    margin-top:2vh;
-    height:1350px;
-    background-color: $blackColor;
-    .examples__content{
-        padding:3.2rem;
-        .examples__content-title{
+    color: $color--white;
+    margin-top: 2.4rem;
+    height: 84.375rem;
+    background-color: $color--black;
+
+    .examples__content {
+        padding: 3.2rem;
+
+        .examples__content-title {
             text-align: center;
-            padding:2rem 0 0 1.5rem;
+            padding: 2rem 0 0 2rem;
             font-size: 2.5rem;
-            font-weight: $middleW;
+            font-weight: $font-weight--mid;
         }
-        .examples__content-text{
-            padding:2.725rem 2.725rem 0 2.725rem;
+
+        .examples__content-text {
+            padding: 2.725rem 2.725rem 0 2.725rem;
         }
-        .examples__content-spacing{
-           position: absolute;
-           right:60px;
-        }
-        a{
-            background-color: $greenColor;
-            padding:20px 55px 20px 55px;
+
+        a {
+            background-color: $color--green;
+            padding: 1.25rem 3.8rem 1.25rem 3.8rem;
             border-radius: 10px;
-            color: $blackColor;
+            color: $color--black;
             font-weight: bold;
         }
-        .button{
-            padding-top:$padding + 580px;
+
+        .button {
+            padding-top: 5rem;
             text-align: center;
         }
     }

@@ -1,56 +1,65 @@
 .about {
-    margin-top: 41%;
+    margin-top: 6.5rem;
+
     .about__content {
         .about__content-title {
             font-size: 2.525rem;
-            font-weight: $largeW;
+            font-weight: $font-weight--large ;
             text-align: center;
         }
 
         .cards {
-            padding:90px;
+            padding: 5.625rem;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            svg{
+            gap: 1.25rem;
+
+            svg {
                 z-index: 3;
-                padding:$padding;
+                padding: $padding;
             }
-            .single-card{
-                position: relative;
-                background-color: $blackColor;
-                color:$whiteColor;
-                height:34vh;
-                padding: 20px;
-                font-size:1.1.125rem;
-                box-shadow: 2px 5px 15px 5px rgba(0,0,0,0.34);
-                h4{
-                    font-weight: $smallW;
+
+            .single-card {
+                background-color: $color--black;
+                color: $color--white;
+                height: 15rem;
+                padding: 1.25rem;
+                font-size: 0.9rem;
+                box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.34);
+
+                h4 {
+                    font-weight: $font-weight--small ;
                 }
-                .single-card__bg{
-                    position: absolute;
+
+                .single-card__bg {
                     z-index: 2;
-                    width:100px;
-                    height: 100px;
-                    background-color: $greenColor ;
+                    width: 6.25rem;
+                    height: 6.25rem;
+                    @include alignCenter();
+                    background-color: $color--green;
                     border-radius: $circle;
                 }
-                .single-card__title{
+
+                .single-card__title {
                     display: flex;
-                    .single-card__title-text{
-                        padding:25px 30px 0 20px;
-                        h1{
-                            font-weight: $middleW;
+
+                    .single-card__title-text {
+                        padding: 1.5625rem 1.875rem 0 1.25rem;
+
+                        h1 {
+                            font-weight: $font-weight--mid ;
                             font-size: 1.225rem;
                         }
-                        h4{
-                            padding-top:$padding - 10;
+
+                        h4 {
+                            padding-top: $padding - 0.625rem;
                             font-size: 1.3rem;
                         }
                     }
                 }
-                p{
-                   padding-top:$padding;
+
+                p {
+                    padding-top: $padding;
                 }
             }
         }

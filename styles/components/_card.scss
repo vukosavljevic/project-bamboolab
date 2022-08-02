@@ -1,25 +1,28 @@
-.card{
-    display: $displayFlex;
-    margin-left:1rem;
-    gap:2rem;
-    .card-text{
-        font-size:0.85rem;
+.card {
+    display: flex;
+    gap: 2rem;
+
+    .card-text {
+        font-size: 0.85rem;
         line-height: 1.125rem;
-        min-width:560px;
+        min-width: 35rem;
         font-weight: 300;
     }
-    h1{
-        font-weight: $smallMidW;
-        font-size:1.9rem;
+
+    h1 {
+        font-weight: $font-weight--midsmall;
+        font-size: 1.9rem;
         padding-bottom: 1rem;
     }
-    img{
-        max-width:600px;
-        height:400px;
-        border-right:25px solid $greenColor;
+
+    img {
+        max-width: 600px;
+        height: 400px;
+        border-right: 25px solid $color--green;
     }
-    .card-image{
-        border:none;
-        border-left:25px solid $greenColor;
+
+    .card-image {
+        border: none;
+        border-left: 25px solid $color--green;
     }
 }

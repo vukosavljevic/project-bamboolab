@@ -1,13 +1,9 @@
-// ABSTRACTS
+
 @import './abstracts/variables';
 @import './abstracts/mixins';
-// ABSTRACTS
 
-// BASE
 @import './base/reset';
-// BASE
 
-// LAYOUT
 @import './layout/header';
 @import './layout/hero';
 @import './layout/about';
@@ -15,8 +11,5 @@
 @import './layout/contact-form';
 @import './layout/information';
 @import './layout/footer';
-// LAYOUT
 
-//COMPONENTS 
 @import './components/card';
-//COMPONENTS

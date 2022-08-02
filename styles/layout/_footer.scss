@@ -1,18 +1,21 @@
-.footer{
-    font-size:0.9rem;
-    background-color:$blackColor;
-    color:$whiteColor;
-    padding:$padding - 10;
-    font-weight: $smallW;
-    .footer__content{
+.footer {
+    font-size: 0.9rem;
+    background-color: $color--black;
+    color: $color--white;
+    padding: $padding - 0.625rem;
+    font-weight: $font-weight--small;
+
+    .footer__content {
         @include spaceBetween();
-        p{
-            margin-left:75px;
+
+        p {
+            margin-left: 4.6875rem;
         }
-        ul{
-            display:$displayFlex;
-            gap:2rem;
-            margin-right:65px;
+
+        ul {
+            display: flex;
+            gap: 2rem;
+            margin-right: 4.0625rem;
         }
     }
 }

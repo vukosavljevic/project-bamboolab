@@ -1,90 +1,89 @@
 .information {
     height: 350px;
     width: 100%;
-    background-color: $greenColor;
-    a{
-        color:$blackColor;
+    background-color: $color--green;
+
+    a {
+        color: $color--black;
     }
+
     .navbar__logo {
         @include alignCenter();
         position: relative;
         font-size: 3.3rem;
         margin-left: 4rem;
         font-weight: 500;
-        color: $blackColor;
+        color: $color--black;
         height: 52px;
         width: 120px;
 
         h1 {
-            z-index:100;
-            margin:150px 0 0 10px;
+            z-index: 100;
+            margin: 9.375rem 0 0 0.625rem;
         }
 
         .navbar__shadow {
             position: absolute;
-            background-color: $whiteColor;
+            background-color: $color--white;
             height: 58px;
             width: 200px;
-            right:-73%;
+            right: -73%;
             bottom: -100%;
         }
     }
-    .information__content-flex{
-        display:$displayFlex;
-        margin-top:14vh;
+
+    .information__content-flex {
+        display: flex;
+        margin-top: 6.5rem;
         font-size: 1.2rem;
-        gap:5rem;
-        .single-card{
-            margin-left:5rem;
-            h1{
+        gap: 3rem;
+
+        .single-card {
+            margin-left: 5rem;
+
+            h1 {
                 font-weight: 500;
-                padding-bottom: 10px;
+                padding-bottom: 0.625rem;
             }
-            h2{
-                @include headingFooter(0.8);
+
+            h2 {
+                @include headingFooter();
             }
-            li{
+
+            li {
                 @include listFooter();
             }
         }
-        .second-card{
-            margin-left:12rem;
-            li{
+
+        .second-card {
+            margin-left: 15rem;
+
+            li {
                 @include listFooter();
             }
-            h2{
-                @include headingFooter(0.9);
+
+            h2 {
+                @include headingFooter();
+                margin-bottom: 0.625rem;
             }
         }
-        .second-card_icons{
-            margin-left:12rem;
-            
-                .facebook-icon{
-                    @include icons(-2447,329);
-                }
-                .twitter-icon{
-                    @include icons(-2447,269);
-                }
-                .linkedin-icon{
-                    @include icons(-2446,207);
-                }
-                .youtube-icon{
-                    @include icons(-2443,150);
-                }
-                h2{
-                    @include headingFooter(0.9);
-                }
-                .single-card__bg1{
-                   @include iconBackground(0); 
+
+        .second-card_icons {
+            display: flex;
+            gap: 1.125rem;
+
+            .single-icon {
+                @include icons();
+                text-align: center;
             }
-            .single-card__bg2{
-                @include iconBackground(60); 
+
+            h2 {
+                @include headingFooter();
             }
-            .single-card__bg3{
-                @include iconBackground(120);
-            }
-            .single-card__bg4{
-                @include iconBackground(180);
+
+            .single-card__bg {
+                @include iconBackground();
+                @include alignStart();
             }
         }
     }

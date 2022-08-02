@@ -29,15 +29,17 @@
         </nav>
     </header>
     <section class="hero">
-        <div class="hero-picture"></div>
-        <div class="hero-section__content">
-            <div class="hero-section__title">
-                <h1>Hero Title</h1>
-            </div>
-            <div class="hero-section__text">
-                <p>I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis for
-                    a system of government. Supreme executive power derives from a mandate from the masses, not from
-                    some farcical aquatic ceremony.</p>
+        <div class="hero-wrapper">
+            <div class="hero-section__content">
+                <div class="hero-section__title">
+                    <h1>Hero Title</h1>
+                </div>
+                <div class="hero-section__text">
+                    <p>I'm Brian, and so's my wife! Listen, strange women lyin' in ponds distributin' swords is no basis
+                        for
+                        a system of government. Supreme executive power derives from a mandate from the masses, not from
+                        some farcical aquatic ceremony.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -48,52 +50,56 @@
             </div>
             <div class="cards">
                 <div class="single-card">
-                    <div class="single-card__bg"></div>
                     <div class="single-card__title">
-                        <svg width="60" height=60" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M37 2C50.563 2 62.315 9.72 68.126 21" stroke="#333333" stroke-width="4"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M72 37C72 31.233 70.596 25.797 68.126 21" stroke="#333333" stroke-width="4"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M27.1801 70.588C30.2951 71.504 33.5881 72 37.0001 72C56.3301 72 72.0001 56.33 72.0001 37"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M2 37C2 17.67 17.67 2 37 2" stroke="#333333" stroke-width="4"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M2.956 45.102C2.335 42.501 2 39.791 2 37" stroke="#333333" stroke-width="4"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M2 37H72" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M68.138 21H68.126" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M32 52.999L61 53" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M37 10V64" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M18.578 37C18.577 31.543 19.694 26.09 21.912 21" stroke="#333333" stroke-width="4"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M19.084 43.341C18.748 41.242 18.578 39.121 18.578 37" stroke="#333333"
-                                stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M55.431 37C55.431 31.543 54.31 26.09 52.09 21" stroke="#333333" stroke-width="4"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M37 2L30.284 8.716C26.637 12.363 23.855 16.543 21.912 21" stroke="#333333"
-                                stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M37 2L43.716 8.716C47.363 12.363 50.147 16.542 52.091 21" stroke="#333333"
-                                stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M30.665 65.665L37 72L43.716 65.284C47.363 61.637 50.147 57.457 52.091 52.999C54.31 47.91 55.432 42.456 55.432 36.999"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M23.412 62.837C25.003 61.237 25.787 59.025 25.563 56.765C25.211 53.212 22.259 50.315 18.697 50.026C17.099 49.896 15.525 50.27 14.178 51.086C13.944 51.228 13.658 51.228 13.423 51.086C11.629 49.999 9.43502 49.696 7.31602 50.323C4.87702 51.044 2.94002 53.026 2.27402 55.481C1.54602 58.167 2.29702 60.935 4.18902 62.838L11.698 71.073C12.236 71.662 13.002 72 13.8 72C14.598 72 15.364 71.662 15.902 71.072L23.412 62.837Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
-                            <path d="M13 21H68.126" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div class="single-card__bg">
+                            <svg width="60" height=60" viewBox="0 0 74 74" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37 2C50.563 2 62.315 9.72 68.126 21" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M72 37C72 31.233 70.596 25.797 68.126 21" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M27.1801 70.588C30.2951 71.504 33.5881 72 37.0001 72C56.3301 72 72.0001 56.33 72.0001 37"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2 37C2 17.67 17.67 2 37 2" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2.956 45.102C2.335 42.501 2 39.791 2 37" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2 37H72" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M68.138 21H68.126" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M32 52.999L61 53" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M37 10V64" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.578 37C18.577 31.543 19.694 26.09 21.912 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M19.084 43.341C18.748 41.242 18.578 39.121 18.578 37" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M55.431 37C55.431 31.543 54.31 26.09 52.09 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M37 2L30.284 8.716C26.637 12.363 23.855 16.543 21.912 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M37 2L43.716 8.716C47.363 12.363 50.147 16.542 52.091 21" stroke="#333333"
+                                    stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M30.665 65.665L37 72L43.716 65.284C47.363 61.637 50.147 57.457 52.091 52.999C54.31 47.91 55.432 42.456 55.432 36.999"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M23.412 62.837C25.003 61.237 25.787 59.025 25.563 56.765C25.211 53.212 22.259 50.315 18.697 50.026C17.099 49.896 15.525 50.27 14.178 51.086C13.944 51.228 13.658 51.228 13.423 51.086C11.629 49.999 9.43502 49.696 7.31602 50.323C4.87702 51.044 2.94002 53.026 2.27402 55.481C1.54602 58.167 2.29702 60.935 4.18902 62.838L11.698 71.073C12.236 71.662 13.002 72 13.8 72C14.598 72 15.364 71.662 15.902 71.072L23.412 62.837Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
+                                <path d="M13 21H68.126" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
                         <div class="single-card__title-text">
                             <h1>Card title</h1>
                             <h4>Card Subtitle</h4>
@@ -106,29 +112,31 @@
                         workers.</p>
                 </div>
                 <div class="single-card">
-                    <div class="single-card__bg"></div>
                     <div class="single-card__title">
-                        <svg width="60" height="60" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M71 51C73.209 51 75 49.209 75 47V17C75 14.791 73.209 13 71 13H9C6.791 13 5 14.791 5 17V47C5 49.209 6.791 51 9 51H71Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
-                            <path d="M28 19V45" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" />
-                            <path d="M52 19V45" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" />
-                            <path d="M11 32H69" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" />
-                            <path d="M54 62H20C17.791 62 16 60.209 16 58V51" stroke="#333333" stroke-width="4"
-                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M57 57H58C59.657 57 61 58.343 61 60V64C61 65.657 59.657 67 58 67H57C55.343 67 54 65.657 54 64V60C54 58.343 55.343 57 57 57Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M64 59H60.829" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M64 65H60.829" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div class="single-card__bg">
+                            <svg width="60" height="60" viewBox="0 0 80 80" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M71 51C73.209 51 75 49.209 75 47V17C75 14.791 73.209 13 71 13H9C6.791 13 5 14.791 5 17V47C5 49.209 6.791 51 9 51H71Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" />
+                                <path d="M28 19V45" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                                <path d="M52 19V45" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                                <path d="M11 32H69" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                                <path d="M54 62H20C17.791 62 16 60.209 16 58V51" stroke="#333333" stroke-width="4"
+                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M57 57H58C59.657 57 61 58.343 61 60V64C61 65.657 59.657 67 58 67H57C55.343 67 54 65.657 54 64V60C54 58.343 55.343 57 57 57Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M64 59H60.829" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M64 65H60.829" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
                         <div class="single-card__title-text">
                             <h1>Card title</h1>
                             <h4>Card Subtitle</h4>
@@ -141,38 +149,40 @@
                         workers.</p>
                 </div>
                 <div class="single-card">
-                    <div class="single-card__bg"></div>
                     <div class="single-card__title">
-                        <svg width="60" height="60" viewBox="0 0 51 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M24 32V48C24 50.209 22.209 52 20 52H11.5C9.567 52 8 53.567 8 55.5C8 57.433 9.567 59 11.5 59H29"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M24 32C26.2091 32 28 30.2091 28 28C28 25.7909 26.2091 24 24 24C21.7909 24 20 25.7909 20 28C20 30.2091 21.7909 32 24 32Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M23.9999 24V4.40099C23.9999 1.41999 19.6459 1.11099 19.2239 4.06199L18.1679 12.634C18.0589 13.519 18.2489 14.416 18.7079 15.181L23.9999 24Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M20.5359 30L3.56192 39.8C0.980924 41.29 2.88992 45.216 5.65592 44.106L13.6079 40.734C14.4289 40.386 15.1109 39.773 15.5439 38.993L20.5359 30Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M27.4639 30L44.4379 39.8C47.0189 41.29 49.4639 37.674 47.1199 35.834L40.2239 30.633C39.5119 30.096 38.6399 29.812 37.7479 29.827L27.4639 30Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M32 54H33C34.657 54 36 55.343 36 57V61C36 62.657 34.657 64 33 64H32C30.343 64 29 62.657 29 61V57C29 55.343 30.343 54 32 54Z"
-                                stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M39.0001 56H35.8291" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M39.0001 62H35.8291" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div class="single-card__bg">
+                            <svg width="60" height="60" viewBox="0 0 51 66" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 32V48C24 50.209 22.209 52 20 52H11.5C9.567 52 8 53.567 8 55.5C8 57.433 9.567 59 11.5 59H29"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M24 32C26.2091 32 28 30.2091 28 28C28 25.7909 26.2091 24 24 24C21.7909 24 20 25.7909 20 28C20 30.2091 21.7909 32 24 32Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M23.9999 24V4.40099C23.9999 1.41999 19.6459 1.11099 19.2239 4.06199L18.1679 12.634C18.0589 13.519 18.2489 14.416 18.7079 15.181L23.9999 24Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M20.5359 30L3.56192 39.8C0.980924 41.29 2.88992 45.216 5.65592 44.106L13.6079 40.734C14.4289 40.386 15.1109 39.773 15.5439 38.993L20.5359 30Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M27.4639 30L44.4379 39.8C47.0189 41.29 49.4639 37.674 47.1199 35.834L40.2239 30.633C39.5119 30.096 38.6399 29.812 37.7479 29.827L27.4639 30Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M32 54H33C34.657 54 36 55.343 36 57V61C36 62.657 34.657 64 33 64H32C30.343 64 29 62.657 29 61V57C29 55.343 30.343 54 32 54Z"
+                                    stroke="#333333" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M39.0001 56H35.8291" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M39.0001 62H35.8291" stroke="#333333" stroke-width="4" stroke-miterlimit="10"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
                         <div class="single-card__title-text">
                             <h1>Card title</h1>
                             <h4>Card Subtitle</h4>
@@ -254,9 +264,11 @@
             <h1>Section Title</h1>
             <p>You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my
                 nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.</p>
-            <div class="contact-form__content">
-                <input type="text" name="contact"><a href="#">SEND</a>
-                <label for="contact">example@email.com</label>
+            <div class="contact-form__content form">
+                <form>
+                    <input type="email" placeholder="example@email.com">
+                    <a href="#">SEND</a>
+                </form>
             </div>
         </div>
     </section>
@@ -272,65 +284,83 @@
                     <ul>
                         <li>Krralja Zvonimira 35</li>
                         <li>21000 Split</li>
-                        <li>hello@companyname.com</li>
+                        <li><a href="#">hello@companyname.com</a></li>
                         <li>+385 21 323 044</li>
                     </ul>
                 </div>
                 <div class="single-card">
                     <h2>Products</h2>
                     <ul>
-                        <a href="#"><li>Pricing</li></a>
-                        <a href="#"><li>Testimonials</li></a>
-                        <a href="#"><li>Get it Now</li></a>
+                        <a href="#">
+                            <li>Pricing</li>
+                        </a>
+                        <a href="#">
+                            <li>Testimonials</li>
+                        </a>
+                        <a href="#">
+                            <li>Get it Now</li>
+                        </a>
                     </ul>
                 </div>
                 <div class="second-card">
                     <h2>Company</h2>
                     <ul>
-                        <a href="#"><li>About</li></a>
-                        <a href="#"><li>Blog</li></a>
-                        <a href="#"><li>Contact</li></a>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>Blog</li>
+                        </a>
+                        <a href="#">
+                            <li>Contact</li>
+                        </a>
                     </ul>
                 </div>
-                <div class="second-card_icons">
+                <div class="second-card">
                     <h2>Follow Us</h2>
-                    <div class="facebook-icon">
-                        <a href="#"><svg width="30" height="21" viewBox="0 0 10 20" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M2.57989 19.2342V9.99933H0.703125V6.93821H2.57989V5.08703C2.57989 2.5901 3.32643 0.789551 6.06036 0.789551H9.31276V3.84439H7.02257C5.87571 3.84439 5.61437 4.60649 5.61437 5.40456V6.93821H9.14373L8.662 9.99933H5.61437V19.2342H2.57989Z"
-                                    fill="#FEFEFE" />
-                            </svg></a>
-                    </div>
-                    <div class="single-card__bg1"></div>
-                    <div class="twitter-icon">
-                        <a href="#"><svg width="30" height="21" viewBox="0 0 18 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M14.8944 1.833C14.2496 1.09993 13.3309 0.632875 12.3141 0.61595C10.3618 0.583456 8.77892 2.23312 8.77892 4.30042C8.77892 4.59382 8.8102 4.87993 8.8705 5.15459C5.93249 4.96401 3.32762 3.4341 1.58413 1.12795C1.27983 1.68055 1.10546 2.32643 1.10546 3.01831C1.10546 4.32809 1.72956 5.49051 2.67811 6.17685C2.09864 6.15127 1.55354 5.97585 1.07694 5.68807C1.0766 5.7038 1.0766 5.71953 1.0766 5.73554C1.0766 7.56465 2.29516 9.09914 3.91235 9.45659C3.61572 9.54065 3.30341 9.58463 2.98103 9.5825C2.75324 9.58099 2.53173 9.55573 2.31592 9.51037C2.76573 11.0104 4.07122 12.105 5.6182 12.1412C4.40834 13.1455 2.8841 13.7437 1.2278 13.7402C0.942454 13.7397 0.661075 13.7212 0.384521 13.6857C1.94899 14.7592 3.80716 15.3842 5.80351 15.3847C12.3058 15.3864 15.8616 9.72783 15.8616 4.8197C15.8616 4.65867 15.8581 4.4985 15.8514 4.33911C16.5421 3.82445 17.1414 3.17918 17.6153 2.44234C16.9814 2.7281 16.3 2.91789 15.585 2.9975C16.3148 2.54834 16.8754 1.82948 17.1393 0.967432C16.4562 1.38169 15.6997 1.67877 14.8944 1.833Z"
-                                    fill="#FEFEFE" /></a>
-                        </svg>
-                    </div>
-                    <div class="single-card__bg2"></div>
-                    <div class="linkedin-icon">
-                        <a href="#"><svg width="36" height="26" viewBox="0 0 16 16" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M3.67096 15.3724V5.61307H0.654582V15.3724H3.67096ZM3.67096 2.15381C3.65299 1.28045 3.07093 0.615479 2.12535 0.615479C1.17952 0.615479 0.561523 1.28045 0.561523 2.15381C0.561523 3.0082 1.16156 3.6924 2.08917 3.6924H2.10714C3.07093 3.6924 3.67096 3.0082 3.67096 2.15381ZM8.59201 15.3724V9.81202C8.59201 9.51444 8.61352 9.21686 8.70103 9.00472C8.94027 8.40984 9.48476 7.79405 10.399 7.79405C11.5967 7.79405 12.3479 8.47378 12.3479 9.81202V15.3724H15.3846V9.66323C15.3846 6.60489 13.752 5.18178 11.5743 5.18178C9.78883 5.18178 9.00509 6.18002 8.56991 6.85945L8.59171 5.55418H5.56023C5.60384 6.48848 5.56023 15.3724 5.56023 15.3724H8.59201Z"
-                                    fill="#FEFEFE" /></a>
-                        </svg>
-                    </div>
-                    <div class="single-card__bg3"></div>
-                    <div class="youtube-icon">
-                        <a href="#"><svg width="26" height="16" viewBox="0 0 22 15" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M21.0221 3.13946C21.0221 3.13946 20.8221 1.73005 20.2088 1.10921C19.4314 0.294743 18.5594 0.29088 18.1597 0.243158C15.2977 0.0361328 11.0045 0.0361328 11.0045 0.0361328H10.9954C10.9954 0.0361328 6.70241 0.0361328 3.84019 0.243158C3.44046 0.29088 2.56896 0.294743 1.79108 1.10921C1.17773 1.73005 0.978207 3.13946 0.978207 3.13946C0.978207 3.13946 0.773682 4.79452 0.773682 6.44958V8.00148C0.773682 9.65631 0.978207 11.3114 0.978207 11.3114C0.978207 11.3114 1.17773 12.7208 1.79108 13.3416C2.56896 14.1563 3.5909 14.1302 4.04608 14.2156C5.68251 14.3727 10.9999 14.4213 10.9999 14.4213C10.9999 14.4213 15.2977 14.4147 18.1597 14.2079C18.5594 14.1602 19.4314 14.1563 20.2088 13.3416C20.8221 12.7208 21.0221 11.3114 21.0221 11.3114C21.0221 11.3114 21.2262 9.65631 21.2262 8.00148V6.44958C21.2262 4.79452 21.0221 3.13946 21.0221 3.13946ZM8.88855 9.88151L8.88764 4.13504L14.4139 7.01816L8.88855 9.88151Z"
-                                    fill="#FEFEFE" />
-                            </svg></a>
-                    </div>
+                    <div class="second-card_icons">
+                        <div class="single-card__bg">
+                            <div class="single-icon">
+                                <a href="#"><svg width="20" height="14" viewBox="0 0 10 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.57989 19.2342V9.99933H0.703125V6.93821H2.57989V5.08703C2.57989 2.5901 3.32643 0.789551 6.06036 0.789551H9.31276V3.84439H7.02257C5.87571 3.84439 5.61437 4.60649 5.61437 5.40456V6.93821H9.14373L8.662 9.99933H5.61437V19.2342H2.57989Z"
+                                            fill="#FEFEFE" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                        <div class="single-card__bg">
+                            <div class="single-icon">
+                                <a href="#"><svg width="20" height="14" viewBox="0 0 18 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.8944 1.833C14.2496 1.09993 13.3309 0.632875 12.3141 0.61595C10.3618 0.583456 8.77892 2.23312 8.77892 4.30042C8.77892 4.59382 8.8102 4.87993 8.8705 5.15459C5.93249 4.96401 3.32762 3.4341 1.58413 1.12795C1.27983 1.68055 1.10546 2.32643 1.10546 3.01831C1.10546 4.32809 1.72956 5.49051 2.67811 6.17685C2.09864 6.15127 1.55354 5.97585 1.07694 5.68807C1.0766 5.7038 1.0766 5.71953 1.0766 5.73554C1.0766 7.56465 2.29516 9.09914 3.91235 9.45659C3.61572 9.54065 3.30341 9.58463 2.98103 9.5825C2.75324 9.58099 2.53173 9.55573 2.31592 9.51037C2.76573 11.0104 4.07122 12.105 5.6182 12.1412C4.40834 13.1455 2.8841 13.7437 1.2278 13.7402C0.942454 13.7397 0.661075 13.7212 0.384521 13.6857C1.94899 14.7592 3.80716 15.3842 5.80351 15.3847C12.3058 15.3864 15.8616 9.72783 15.8616 4.8197C15.8616 4.65867 15.8581 4.4985 15.8514 4.33911C16.5421 3.82445 17.1414 3.17918 17.6153 2.44234C16.9814 2.7281 16.3 2.91789 15.585 2.9975C16.3148 2.54834 16.8754 1.82948 17.1393 0.967432C16.4562 1.38169 15.6997 1.67877 14.8944 1.833Z"
+                                            fill="#FEFEFE" /></a>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="single-card__bg">
+                            <div class="single-icon">
+                                <a href="#"><svg width="20" height="14" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M3.67096 15.3724V5.61307H0.654582V15.3724H3.67096ZM3.67096 2.15381C3.65299 1.28045 3.07093 0.615479 2.12535 0.615479C1.17952 0.615479 0.561523 1.28045 0.561523 2.15381C0.561523 3.0082 1.16156 3.6924 2.08917 3.6924H2.10714C3.07093 3.6924 3.67096 3.0082 3.67096 2.15381ZM8.59201 15.3724V9.81202C8.59201 9.51444 8.61352 9.21686 8.70103 9.00472C8.94027 8.40984 9.48476 7.79405 10.399 7.79405C11.5967 7.79405 12.3479 8.47378 12.3479 9.81202V15.3724H15.3846V9.66323C15.3846 6.60489 13.752 5.18178 11.5743 5.18178C9.78883 5.18178 9.00509 6.18002 8.56991 6.85945L8.59171 5.55418H5.56023C5.60384 6.48848 5.56023 15.3724 5.56023 15.3724H8.59201Z"
+                                            fill="#FEFEFE" /></a>
+                                </svg>
+                            </div>
+                        </div>
 
-                    <div class="single-card__bg4"></div>
+                        <div class="single-card__bg">
+                            <div class="single-icon">
+                                <a href="#"><svg width="20" height="14" viewBox="0 0 22 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.0221 3.13946C21.0221 3.13946 20.8221 1.73005 20.2088 1.10921C19.4314 0.294743 18.5594 0.29088 18.1597 0.243158C15.2977 0.0361328 11.0045 0.0361328 11.0045 0.0361328H10.9954C10.9954 0.0361328 6.70241 0.0361328 3.84019 0.243158C3.44046 0.29088 2.56896 0.294743 1.79108 1.10921C1.17773 1.73005 0.978207 3.13946 0.978207 3.13946C0.978207 3.13946 0.773682 4.79452 0.773682 6.44958V8.00148C0.773682 9.65631 0.978207 11.3114 0.978207 11.3114C0.978207 11.3114 1.17773 12.7208 1.79108 13.3416C2.56896 14.1563 3.5909 14.1302 4.04608 14.2156C5.68251 14.3727 10.9999 14.4213 10.9999 14.4213C10.9999 14.4213 15.2977 14.4147 18.1597 14.2079C18.5594 14.1602 19.4314 14.1563 20.2088 13.3416C20.8221 12.7208 21.0221 11.3114 21.0221 11.3114C21.0221 11.3114 21.2262 9.65631 21.2262 8.00148V6.44958C21.2262 4.79452 21.0221 3.13946 21.0221 3.13946ZM8.88855 9.88151L8.88764 4.13504L14.4139 7.01816L8.88855 9.88151Z"
+                                            fill="#FEFEFE" />
+                                    </svg></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
