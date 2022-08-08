@@ -1,0 +1,19 @@
+.slider{
+    margin-top:14rem;
+    img{
+        height:223px;
+        width:420px;
+    }
+}
+button{
+    margin-left:6%;
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+button:nth-child(2){
+    margin-right: 6%;
+}
+@media (min-width:375px) and (max-width:765px) {
+
+}
