@@ -65,3 +65,14 @@
         }
     }
 }
+@media (max-width:1200px){
+    .about{
+        transition:0.3s ease;
+    }
+    .cards{
+        display:block !important;
+    }
+    .single-card{
+        margin:20px;
+    }
+}
