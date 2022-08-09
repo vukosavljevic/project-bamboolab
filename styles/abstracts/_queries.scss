@@ -1,12 +1,12 @@
 $breakpoint--xs:375px ;
 $breakpoint--sm:768px;
 
-@mixin breakpoint($bp: 0){
-    @media(max-width:$bp){
-        @content;
-    }
-}
 @include breakpoint($breakpoint--sm){
+    .fixed{
+        z-index: 100;
+        width: 100%;
+        position: fixed;
+    }
     .navbar{
         height:64px !important;
     }

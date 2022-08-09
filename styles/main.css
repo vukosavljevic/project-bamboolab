@@ -135,6 +135,7 @@ a {
 }
 
 body {
+  width: 100%;
   font-family: 'Raleway';
   font-weight: italic;
   font-size: 0.8125rem;
@@ -717,6 +718,11 @@ button:nth-child(2) {
 }
 
 @media (max-width: 768px) {
+  .fixed {
+    z-index: 100;
+    width: 100%;
+    position: fixed;
+  }
   .navbar {
     height: 64px !important;
   }
