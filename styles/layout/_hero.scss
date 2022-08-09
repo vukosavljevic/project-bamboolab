@@ -1,9 +1,9 @@
 .hero {
     background-image: url('../img/Rectangle\ 4.png');
-    height: 100%;
+    height: 32rem;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     z-index: -1;
 
     .hero-wrapper {
@@ -32,19 +32,27 @@
 
     }
     }
-
 }
-@media (max-width:1200px) {
-    .hero-section__content{
-        padding: 0.5rem !important;
-     background-color: yellow;
-       width:60px !important;
-       height: 60px !important;
-    }
-    .hero-section__text{
-        font-size:5px !important;
-    }
-    .hero-section__title {
-        font-size:15px !important;
+.hero-responsive{
+    width:100%;
+    display: none;
+    .hero-responisve-wrapper{
+        height: 8.5rem;
+        padding: 2rem;
+        z-index: 1;
+        background-color: $color--black;
+        color: $color--white;
+        border-bottom: 36px solid $color--green;
+        padding-bottom: 3rem;
+        h1{
+            font-size:2rem;
+            margin-bottom: 2rem;
+            font-weight:$font-weight--large;
+            text-align: center;
+        }
+        .hero-section__text {
+            font-size:1rem;
+            font-weight: 400;
+        }
     }
 }

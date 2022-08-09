@@ -1,4 +1,19 @@
-@media(max-width:768px) {
+$breakpoint--xs:375px ;
+$breakpoint--sm:768px;
+
+@mixin breakpoint($bp: 0){
+    @media(max-width:$bp){
+        @content;
+    }
+}
+@include breakpoint($breakpoint--sm){
+    .navbar{
+        height:64px !important;
+    }
+    .navbar__logo
+    {
+        margin-left:0rem !important;
+    }
     .hamburger {
         display: block;
     }
@@ -59,4 +74,16 @@
         background-color: white;
         transition: all 0.3s ease-in-out;
     }
+    .hero {
+        .hero-wrapper{
+            padding:0;
+        }
+    }
+    .hero-section__content{
+        display: none;
+    }
+    .hero-responsive{
+        display: block;
+    }
 }
+
