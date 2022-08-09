@@ -1,18 +1,22 @@
-$breakpoint--xs:375px ;
+$breakpoint--xs:376px;
 $breakpoint--sm:768px;
-
+@include breakpoint($breakpoint--xs){
+    .fixed{
+        width:28% !important;
+    }
+}
 @include breakpoint($breakpoint--sm){
     .fixed{
         z-index: 100;
-        width: 100%;
+        width:100%;
         position: fixed;
     }
     .navbar{
-        height:64px !important;
+        height:34px !important;
     }
     .navbar__logo
     {
-        margin-left:0rem !important;
+        margin-left:1rem !important;
     }
     .hamburger {
         display: block;
@@ -54,13 +58,12 @@ $breakpoint--sm:768px;
         gap: 4rem !important;
         height: 100%;
     }
-
     .navbar__item-button.active {
         background-color: #87DE87 !important;
         padding: 2rem !important;
         left: 0;
-        width:12rem;
-        margin-top: 42.25rem;
+        width:11.8rem;
+        margin-top: 36.25rem;
         margin-left: 3.125rem;
         font-size: 2rem;
         padding: 3rem;
@@ -75,6 +78,7 @@ $breakpoint--sm:768px;
         transition: all 0.3s ease-in-out;
     }
     .hero {
+        height:29.5625rem !important;
         .hero-wrapper{
             padding:0;
         }
@@ -84,6 +88,13 @@ $breakpoint--sm:768px;
     }
     .hero-responsive{
         display: block;
+        animation-name:come-up;
+        animation-duration:2s;
+    }
+    .examples__content-text, .examples__content-spacing{
+        display:flex;
+        flex-flow: row wrap;
+        order: 1;
+        min-width: 400px !important;
     }
 }
-
