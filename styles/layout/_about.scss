@@ -22,7 +22,7 @@
             .single-card {
                 background-color: $color--black;
                 color: $color--white;
-                height: 15rem;
+                min-height: 15rem;
                 padding: 1.25rem;
                 font-size: 0.9rem;
                 box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.34);

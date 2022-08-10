@@ -307,7 +307,7 @@ body {
 .about .about__content .cards .single-card {
   background-color: #333333;
   color: #FFFFFF;
-  height: 15rem;
+  min-height: 15rem;
   padding: 1.25rem;
   font-size: 0.9rem;
   -webkit-box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.34);
@@ -793,6 +793,33 @@ button:nth-child(2) {
     background-color: white;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+  .cards {
+    padding: 1.625rem  !important;
+  }
+  .cards .single-card {
+    position: relative !important;
+    margin-top: 6rem !important;
+  }
+  .cards .single-card__title {
+    display: block !important;
+    text-align: center !important;
+  }
+  .cards .single-card__title-text {
+    line-height: rem !important;
+  }
+  .cards .single-card__bg {
+    position: absolute;
+    top: -23%;
+  }
+  .cards .image-wrapper {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .hero {
     height: 29.5625rem !important;

@@ -6,6 +6,7 @@ $breakpoint--sm:768px;
     }
 }
 @include breakpoint($breakpoint--sm){
+    //navbar//
     .fixed{
         z-index: 100;
         width:100%;
@@ -77,6 +78,33 @@ $breakpoint--sm:768px;
         background-color: white;
         transition: all 0.3s ease-in-out;
     }
+      //navbar//
+      //ABOUT//
+    .cards{
+        padding: 1.625rem  !important;
+        .single-card{
+            position: relative !important;
+            margin-top:6rem !important;
+        }
+        .single-card__title {
+            display: block !important;
+            text-align: center !important;
+        }
+        .single-card__title-text{
+            line-height: rem !important;
+        }
+        .single-card__bg{
+            position: absolute;
+            top:-23%;
+        }
+        .image-wrapper{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+      //ABOUT//
+      //hero//
     .hero {
         height:29.5625rem !important;
         .hero-wrapper{
@@ -97,4 +125,5 @@ $breakpoint--sm:768px;
         order: 1;
         min-width: 400px !important;
     }
+    //hero//
 }
