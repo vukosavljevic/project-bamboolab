@@ -414,6 +414,10 @@ body {
   width: 420px;
 }
 
+.slider .slider-title {
+  display: none;
+}
+
 button {
   margin-left: 6%;
   border: none !important;
@@ -423,11 +427,10 @@ button {
 }
 
 button:nth-child(2) {
-  margin-right: 6%;
+  margin-right: 16%;
 }
 
 .contact-form {
-  height: 12.5rem;
   padding: 6.25rem;
   text-align: center;
   display: -webkit-box;
@@ -718,7 +721,7 @@ button:nth-child(2) {
   border-left: 25px solid #87DE87;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 374px) and (max-width: 768px) {
   .fixed {
     z-index: 100;
     width: 100%;
@@ -843,35 +846,79 @@ button:nth-child(2) {
     max-width: 100%;
     height: auto !important;
     border: none !important;
+    border-bottom: 1rem solid #87DE87 !important;
   }
   .examples__content {
     padding: 0 !important;
   }
   .examples__content-title {
-    padding: 0 !important;
+    padding: 4rem !important;
   }
   .examples__content-text, .examples__content-spacing {
-    padding: 10px !important;
-    min-width: 260px !important;
+    padding: 0 !important;
+    min-width: 16.25rem !important;
     font-size: 0.8225rem !important;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-flow: row-reverse wrap;
-            flex-flow: row-reverse wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .examples__content-text .card h1, .examples__content-spacing .card h1 {
     text-align: center;
     font-size: 1rem !important;
   }
-  .card {
+  .card-text {
+    padding: 0 1.625rem 1.625rem 1.625rem !important;
+  }
+  .card-responsive {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .button {
     display: none;
+  }
+  .slider {
+    margin: 0 !important;
+  }
+  .slider img {
+    height: auto;
+    width: auto;
+  }
+  .slider-title {
+    padding: 4rem !important;
+    display: block !important;
+  }
+  .slider-title h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: #333333;
+  }
+  .contact-form {
+    padding: 5rem !important;
+  }
+  .contact-form p {
+    padding: 0 !important;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+  }
+  .contact-form__content {
+    max-width: 71vw !important;
+  }
+  .contact-form__content form, .contact-form__content input {
+    width: 18.375rem !important;
+  }
+  .contact-form__content form a, .contact-form__content input a {
+    border-radius: 0 !important;
+    margin: 0 !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    outline: #87DE87;
   }
 }
 /*# sourceMappingURL=main.css.map */

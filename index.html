@@ -259,7 +259,7 @@
                 <h1>Section Title</h1>
             </div>
             <div class="examples__content-text">
-                <div class="examples__content-text card">
+                <div class="examples__content-text card card-responsive">
                     <div class="examples__content-text card-text">
                         <h1>Subsection Title</h1>
                         <p>You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly
@@ -316,6 +316,9 @@
         </div>
     </section>
     <section class="slider">
+        <div class="slider-title">
+            <h1>Section Title</h1>
+        </div>
         <div class="glide">
             <div class="glide__track" data-glide-el="track">
                 <ul class="glide__slides">
@@ -532,21 +535,19 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-        const glide = new Glide('.glide', {
-            type: 'carousel',
-            perView: 3.5,
-            focusAt: 'center',
-            breakpoints: {
-                800: {
-                    perView: 2
-                },
-                480: {
-                    perView: 1,
-                    gap:50
-                }
-            }
-        })
-
+       const glide = new Glide('.glide', {
+  type: 'carousel',
+  perView: 3.5,
+  focusAt: 'center',
+  breakpoints: {
+    800: {
+      perView: 3
+    },
+    485: {
+      perView: 1,
+    }
+  }
+       });
         glide.mount()
     </script>
 </body>

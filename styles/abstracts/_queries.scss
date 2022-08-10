@@ -1,7 +1,7 @@
-$breakpoint--xs:376px;
+$breakpoint--xs:374px;
 $breakpoint--sm:768px;
 
-@include breakpoint($breakpoint--sm){
+@include breakpoint-min-max($breakpoint--xs,$breakpoint--sm){
     //navbar//
     .fixed{
         z-index: 100;
@@ -118,6 +118,8 @@ $breakpoint--sm:768px;
         animation-name:come-up;
         animation-duration:2s;
     }
+
+    //examples
     .examples{
         width: 100%;
         margin-top:0 !important;
@@ -126,31 +128,82 @@ $breakpoint--sm:768px;
         max-width:100%;
         height:auto !important;
         border: none !important;
+        border-bottom:1rem solid $color--green !important;
         }
     }
     .examples__content{
         padding:0 !important;
     }
     .examples__content-title{
-        padding:0 !important;
+        padding:4rem !important;
     }
+
     .examples__content-text, .examples__content-spacing{
-        padding:10px !important;
-        min-width:260px !important;
+        padding:0 !important;
+        min-width:16.25rem !important;
         font-size: 0.8225rem !important;
-        flex-flow: row-reverse wrap;
+        flex-wrap:wrap;
         .card h1{
             text-align: center;
             font-size: 1rem !important;
         }
 
     }
-    .card{
+    .card-text{
+        padding:0 1.625rem 1.625rem 1.625rem !important;
+    }
+    .card-responsive{
         display:flex;
-    flex-flow: wrap;
+        flex-flow: wrap;
+        flex-direction: column-reverse;
     }
     .button{
         display: none;
     }
     //hero//
+
+    //slider
+    .slider{
+        margin: 0 !important;
+        img{
+            height:auto;
+            width: auto;
+        }
+    }
+    .slider-title{
+        padding:4rem !important;
+        display: block !important;
+        h1{
+            font-size: 2.5rem;
+            text-align: center;
+            font-weight:700;
+            color:$color--black;
+        }
+    }
+    //slider
+
+    // contact-form
+    .contact-form{
+        padding:5rem !important;
+        p{
+            padding: 0 !important;
+            margin-top:6vw;
+            margin-bottom:6vw;
+        }
+    }
+    .contact-form__content {
+      max-width: 71vw !important;
+      form,input{
+        width: 18.375rem!important;
+        a{
+
+            border-radius: 0 !important;
+            margin: 0 !important;
+            border-top-right-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+            outline: #87DE87;
+        }
+      }
+    }
+
 }
