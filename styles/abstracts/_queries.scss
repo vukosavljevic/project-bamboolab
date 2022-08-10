@@ -119,24 +119,35 @@ $breakpoint--sm:768px;
         animation-duration:2s;
     }
     .examples{
+        width: 100%;
         margin-top:0 !important;
         height:100% !important;
         img{
-        max-width: 300px;
+        max-width:100%;
         height:auto !important;
         border: none !important;
         }
+    }
+    .examples__content{
+        padding:0 !important;
     }
     .examples__content-title{
         padding:0 !important;
     }
     .examples__content-text, .examples__content-spacing{
-        padding:0 !important;
-        display:flex;
-        flex-flow: row wrap;
-        order: 2;
-        min-width: 300px !important;
+        padding:10px !important;
+        min-width:260px !important;
         font-size: 0.8225rem !important;
+        flex-flow: row-reverse wrap;
+        .card h1{
+            text-align: center;
+            font-size: 1rem !important;
+        }
+
+    }
+    .card{
+        display:flex;
+    flex-flow: wrap;
     }
     .button{
         display: none;
