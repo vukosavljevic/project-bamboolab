@@ -850,5 +850,8 @@ button:nth-child(2) {
             order: 1;
     min-width: 400px !important;
   }
+  .deactivate {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
