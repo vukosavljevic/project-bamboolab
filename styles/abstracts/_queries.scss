@@ -1,10 +1,6 @@
 $breakpoint--xs:376px;
 $breakpoint--sm:768px;
-@include breakpoint($breakpoint--xs){
-    .fixed{
-        width:28% !important;
-    }
-}
+
 @include breakpoint($breakpoint--sm){
     //navbar//
     .fixed{
@@ -78,6 +74,9 @@ $breakpoint--sm:768px;
         background-color: white;
         transition: all 0.3s ease-in-out;
     }
+    .deactivate{
+        display: none;
+    }
       //navbar//
       //ABOUT//
     .cards{
@@ -119,13 +118,27 @@ $breakpoint--sm:768px;
         animation-name:come-up;
         animation-duration:2s;
     }
+    .examples{
+        margin-top:0 !important;
+        height:100% !important;
+        img{
+        max-width: 300px;
+        height:auto !important;
+        border: none !important;
+        }
+    }
+    .examples__content-title{
+        padding:0 !important;
+    }
     .examples__content-text, .examples__content-spacing{
+        padding:0 !important;
         display:flex;
         flex-flow: row wrap;
-        order: 1;
-        min-width: 400px !important;
+        order: 2;
+        min-width: 300px !important;
+        font-size: 0.8225rem !important;
     }
-    .deactivate{
+    .button{
         display: none;
     }
     //hero//

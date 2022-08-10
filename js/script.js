@@ -5,6 +5,7 @@ const navbarLogo = document.querySelector('.navbar__png');
 const getButton = document.querySelector('.navbar__item-button');
 const header = document.querySelector('header');
 const hero = document.querySelector('.hero');
+const heroResponsive = document.querySelector('.hero-responsive');
 const about = document.querySelector('.about');
 const examples = document.querySelector('.examples');
 const slider = document.querySelector('.slider');
@@ -20,6 +21,7 @@ hamburger.addEventListener('click', () => {
     getButton.classList.toggle("active");
     header.classList.toggle("fixed");
     hero.classList.toggle("deactivate");
+    heroResponsive.classList.toggle("deactivate");
     about.classList.toggle("deactivate");
     examples.classList.toggle("deactivate");
     slider.classList.toggle("deactivate");
