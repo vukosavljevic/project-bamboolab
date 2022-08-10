@@ -136,7 +136,6 @@ a {
 
 body {
   width: 100%;
-  overflow-x: hidden;
   font-family: 'Raleway';
   font-weight: italic;
   font-size: 0.8125rem;
@@ -885,9 +884,6 @@ button:nth-child(2) {
     font-weight: 700;
     color: #333333;
   }
-  .contact-form {
-    padding: 5rem !important;
-  }
   .contact-form p {
     padding: 0 !important;
     margin-top: 6vw;
@@ -905,6 +901,14 @@ button:nth-child(2) {
     border-top-right-radius: 10px !important;
     border-bottom-right-radius: 10px !important;
     outline: #87DE87;
+  }
+  .information__content .navbar__logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 !important;
+    margin-bottom: 2rem !important;
+    padding: 0 !important;
   }
   .information__content-flex {
     -ms-flex-wrap: wrap;
@@ -925,19 +929,25 @@ button:nth-child(2) {
     display: block !important;
     width: 100%;
   }
-  .navbar__logo {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 !important;
-    margin-bottom: 2rem !important;
-    padding: 0 !important;
-  }
   .second-card_icons {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 2rem;
+  }
+  .footer__content {
+    text-align: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .footer__content p {
+    margin: 0 !important;
+    padding-top: 0.85rem;
+  }
+  .footer__content ul {
+    margin-right: 0 !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -184,7 +184,6 @@ $breakpoint--sm:768px;
 
     // contact-form
     .contact-form{
-        padding:5rem !important;
         p{
             padding: 0 !important;
             margin-top:6vw;
@@ -208,6 +207,14 @@ $breakpoint--sm:768px;
     // contact - form
 
     // information
+    .information__content{
+        .navbar__logo{
+            justify-content: center;
+            margin:0 !important;
+            margin-bottom:2rem !important;
+            padding:0 !important;
+        }
+    }
      .information__content-flex{
         flex-wrap: wrap;
         justify-content: center;
@@ -224,14 +231,23 @@ $breakpoint--sm:768px;
             width: 100%;
         }
      }
-    .navbar__logo{
-        justify-content: center;
-        margin:0 !important;
-        margin-bottom:2rem !important;
-        padding:0 !important;
-    }
     .second-card_icons{
         justify-content: center;
         margin-bottom: 2rem;
+    }
+    //information
+
+    //footer
+
+    .footer__content{
+        text-align: center;
+        flex-direction: column-reverse !important;
+        p{
+            margin: 0 !important;
+            padding-top:0.85rem;
+        }
+        ul{
+            margin-right:0 !important;
+        }
     }
 }
