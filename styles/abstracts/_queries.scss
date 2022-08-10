@@ -80,17 +80,17 @@ $breakpoint--sm:768px;
       //navbar//
       //ABOUT//
     .cards{
-        padding: 1.625rem  !important;
+        padding: 1.92rem  !important;
+        display: block !important;
         .single-card{
             position: relative !important;
+            font-size: 0.8rem !important;
             margin-top:6rem !important;
+            
         }
         .single-card__title {
             display: block !important;
             text-align: center !important;
-        }
-        .single-card__title-text{
-            line-height: rem !important;
         }
         .single-card__bg{
             position: absolute;
@@ -205,5 +205,33 @@ $breakpoint--sm:768px;
         }
       }
     }
+    // contact - form
 
+    // information
+     .information__content-flex{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top:0 !important;
+        .single-card{
+            text-align: center !important;
+            margin:0!important;
+            width: 100%;
+        }
+        .second-card{
+            text-align: center !important;
+            margin: 0 !important;
+            display: block !important;
+            width: 100%;
+        }
+     }
+    .navbar__logo{
+        justify-content: center;
+        margin:0 !important;
+        margin-bottom:2rem !important;
+        padding:0 !important;
+    }
+    .second-card_icons{
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 }
