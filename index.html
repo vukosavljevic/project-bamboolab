@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/vendors/glide.core.css">
     <link rel="stylesheet" href="./styles/vendors/glide.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/72f3874b8b.js" crossorigin="anonymous"></script>
     <title>Pandoo</title>
 </head>
@@ -338,56 +339,9 @@
             </div>
             <div class="glide-wrapper">
                 <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><svg width="100" height="100"
-                            viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_15_193)">
-                                <circle cx="58" cy="58" r="50" fill="#87DE87" />
-                            </g>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M26 58.0182C26 57.4842 26.22 56.9742 26.586 56.5902L46.384 36.5922C47.166 35.8022 48.432 35.8042 49.212 36.5922C49.994 37.3802 49.994 38.6602 49.212 39.4482L32.826 55.9982H88C89.104 55.9982 90 56.9022 90 58.0182C90 59.1342 89.104 60.0382 88 60.0382H32.828L49.212 76.5882C49.994 77.3762 49.992 78.6562 49.212 79.4442C48.43 80.2322 47.164 80.2322 46.384 79.4442L26.586 59.4462C26.212 59.0682 26.006 58.5482 26 58.0182Z"
-                                fill="#333333" />
-                            <defs>
-                                <filter id="filter0_d_15_193" x="0" y="0" width="116" height="116"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feOffset />
-                                    <feGaussianBlur stdDeviation="4" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_15_193" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_193"
-                                        result="shape" />
-                                </filter>
-                            </defs>
-                        </svg>
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left-long fa-2xl"></i>
                     </button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><svg width="100" height="100"
-                            viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_15_194)">
-                                <circle cx="58" cy="58" r="50" fill="#87DE87" />
-                            </g>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M90 58.0182C90 57.4842 89.78 56.9742 89.414 56.5902L69.616 36.5922C68.834 35.8022 67.568 35.8042 66.788 36.5922C66.006 37.3802 66.006 38.6602 66.788 39.4482L83.174 55.9982H28C26.896 55.9982 26 56.9022 26 58.0182C26 59.1342 26.896 60.0382 28 60.0382H83.172L66.788 76.5882C66.006 77.3762 66.008 78.6562 66.788 79.4442C67.57 80.2322 68.836 80.2322 69.616 79.4442L89.414 59.4462C89.788 59.0682 89.994 58.5482 90 58.0182Z"
-                                fill="#333333" />
-                            <defs>
-                                <filter id="filter0_d_15_194" x="0" y="0" width="116" height="116"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feOffset />
-                                    <feGaussianBlur stdDeviation="4" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_15_194" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_15_194"
-                                        result="shape" />
-                                </filter>
-                            </defs>
-                        </svg>
-
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right-long fa-2xl"></i>
 
                     </button>
                 </div>
@@ -539,20 +493,22 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-       const glide = new Glide('.glide', {
+       new Glide('.glide', {
   type: 'carousel',
-  perView: 3.5,
+  perView: 4,
   focusAt: 'center',
   breakpoints: {
+    1160:{
+        perView: 3
+    },
     800: {
-      perView: 3
+      perView: 2
     },
     485: {
-      perView: 1,
+      perView: 1.15,
     }
   }
-       });
-        glide.mount()
+       }).mount()
     </script>
 </body>
 

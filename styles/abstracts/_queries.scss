@@ -176,8 +176,7 @@ $breakpoint--sm:768px;
     .slider{
         margin: 0 !important;
         img{
-            height:auto;
-            width: auto;
+            width: 100%;
         }
     }
     .slider-title{
@@ -189,6 +188,20 @@ $breakpoint--sm:768px;
             font-weight:700;
             color:$color--black;
         }
+    }
+    .fa-arrow-right-long{
+        background-color: $color--white;
+        padding:5px !important;
+    }
+    .fa-arrow-left-long{
+        background-color: $color--white;
+        padding:5px !important;
+    }
+    .glide__arrow--right{
+        margin-right:0% !important;
+    }
+    .glide__arrow--left{
+        margin-left:0% !important;
     }
     //slider
 

@@ -1,19 +1,34 @@
 .slider{
     margin-top:14rem;
     img{
-        height:223px;
-        width:420px;
+       width: 100%;
+       height: 300px;
     }
     .slider-title{
         display: none;
     }
 }
-button{
-    margin-left:6%;
+.fa-arrow-left-long{
+    color: $color--black;
+    padding:25px;
+    background-color: $color--green;
+    border-radius: 50px;
+}
+.fa-arrow-right-long{
+    color: $color--black;
+    padding:25px;
+    background-color: $color--green;
+    border-radius: 50px;
+}
+.glide__arrow--left{
+    margin-left:11%;
     border: none !important;
     background-color: transparent !important;
     box-shadow: none !important;
 }
-button:nth-child(2){
-    margin-right: 16%;
+.glide__arrow--right {
+    margin-right:11%;
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
 }
