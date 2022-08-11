@@ -258,7 +258,6 @@ body {
 }
 
 .hero-responsive .hero-responisve-wrapper {
-  height: 8.5rem;
   padding: 2rem;
   z-index: 1;
   background-color: #333333;
@@ -753,6 +752,7 @@ body {
   }
   .navbar__list,
   .navbar__item-button {
+    font-size: 1.225rem !important;
     z-index: 10;
     position: fixed;
     left: -110%;
@@ -774,15 +774,15 @@ body {
     left: 0;
     font-size: 2rem;
     padding: 3rem;
-    gap: 4rem !important;
+    gap: 2.5rem !important;
     height: 100%;
   }
   .navbar__item-button.active {
     background-color: #87DE87 !important;
     padding: 2rem !important;
     left: 0;
-    width: 11.8rem;
-    margin-top: 36.25rem;
+    width: 7.3rem;
+    margin-top: 70vh;
     margin-left: 3.125rem;
     font-size: 2rem;
     padding: 3rem;
@@ -799,7 +799,7 @@ body {
     display: none;
   }
   .cards {
-    padding: 1.92rem  !important;
+    padding: 1.92rem !important;
     display: block !important;
   }
   .cards .single-card {
@@ -834,6 +834,10 @@ body {
   .hero .hero-wrapper {
     padding: 0;
   }
+  .hero-section__text {
+    font-size: 1rem !important;
+    line-height: 1.2rem !important;
+  }
   .hero-section__content {
     display: none;
   }
@@ -864,19 +868,22 @@ body {
   .examples__content-title {
     padding: 4rem !important;
   }
-  .examples__content-text, .examples__content-spacing {
+  .examples__content-text,
+  .examples__content-spacing {
     padding: 0 !important;
     min-width: 16.25rem !important;
     font-size: 0.8225rem !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .examples__content-text .card, .examples__content-spacing .card {
+  .examples__content-text .card,
+  .examples__content-spacing .card {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .examples__content-text .card h1, .examples__content-spacing .card h1 {
+  .examples__content-text .card h1,
+  .examples__content-spacing .card h1 {
     text-align: center;
     font-size: 1rem !important;
   }
@@ -935,10 +942,12 @@ body {
   .contact-form__content {
     max-width: 71vw !important;
   }
-  .contact-form__content form, .contact-form__content input {
+  .contact-form__content form,
+  .contact-form__content input {
     width: 18.375rem !important;
   }
-  .contact-form__content form a, .contact-form__content input a {
+  .contact-form__content form a,
+  .contact-form__content input a {
     border-radius: 0 !important;
     margin: 0 !important;
     border-top-right-radius: 10px !important;
