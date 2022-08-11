@@ -10,13 +10,13 @@
         padding: 11%;
 
         .hero-section__content {
-            border-left: 24px solid $color--green;
+            border-left: 24px solid $border-radius--color;
             height: 8.5rem;
             width: 25.5rem;
             padding: 1.425rem;
             z-index: 1;
-            background-color: $color--black;
-            color: $color--white;
+            background-color: $background--color;
+            color: $font--color;
 
             .hero-section__title {
                 font-size: 2.5rem;
@@ -43,9 +43,9 @@
 
         padding: 2rem;
         z-index: 1;
-        background-color: $color--black;
+        background-color: $background--color;
         color: $color--white;
-        border-bottom: 36px solid $color--green;
+        border-bottom: 36px solid $border-radius--color;
         padding-bottom: 3rem;
 
         h1 {

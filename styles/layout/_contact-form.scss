@@ -35,8 +35,8 @@
                 font-size: 1.2rem;
                 line-height: 1.75rem;
                 @include alignCenter();
-                background-color: $color--green;
-                color: $color--black;
+                background-color: $border-radius--color;
+                color: $font--color;
                 margin: 0.3125rem 0.3125rem 0.3125rem 0;
                 padding: 0.3125rem 1.25rem 0.3125rem 1.25rem;
                 border-radius: 10px;
