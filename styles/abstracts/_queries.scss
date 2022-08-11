@@ -83,10 +83,14 @@ $breakpoint--sm:768px;
         padding: 1.92rem  !important;
         display: block !important;
         .single-card{
+            min-height: 12rem !important;
             position: relative !important;
-            font-size: 0.8rem !important;
             margin-top:6rem !important;
+            font-weight: 300 !important;
             
+        }
+        .single-card__title-text{
+            margin-top:1rem !important;
         }
         .single-card__title {
             display: block !important;
@@ -131,6 +135,9 @@ $breakpoint--sm:768px;
         border-bottom:1rem solid $color--green !important;
         }
     }
+    .responsive-image{
+        text-align: center; //picture in hero section
+    }
     .examples__content{
         padding:0 !important;
     }
@@ -143,6 +150,9 @@ $breakpoint--sm:768px;
         min-width:16.25rem !important;
         font-size: 0.8225rem !important;
         flex-wrap:wrap;
+        .card{
+            justify-content: center;
+        }
         .card h1{
             text-align: center;
             font-size: 1rem !important;

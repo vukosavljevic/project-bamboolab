@@ -785,9 +785,13 @@ button:nth-child(2) {
     display: block !important;
   }
   .cards .single-card {
+    min-height: 12rem !important;
     position: relative !important;
-    font-size: 0.8rem !important;
     margin-top: 6rem !important;
+    font-weight: 300 !important;
+  }
+  .cards .single-card__title-text {
+    margin-top: 1rem !important;
   }
   .cards .single-card__title {
     display: block !important;
@@ -833,6 +837,9 @@ button:nth-child(2) {
     border: none !important;
     border-bottom: 1rem solid #87DE87 !important;
   }
+  .responsive-image {
+    text-align: center;
+  }
   .examples__content {
     padding: 0 !important;
   }
@@ -845,6 +852,11 @@ button:nth-child(2) {
     font-size: 0.8225rem !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .examples__content-text .card, .examples__content-spacing .card {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .examples__content-text .card h1, .examples__content-spacing .card h1 {
     text-align: center;
