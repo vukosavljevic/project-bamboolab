@@ -358,7 +358,6 @@ body {
   font-family: 'Raleway', italic;
   color: #FFFFFF;
   margin-top: 2.4rem;
-  height: 84.375rem;
   background-color: #333333;
 }
 
@@ -391,7 +390,7 @@ body {
 }
 
 .slider {
-  margin-top: 14rem;
+  margin-top: 5rem;
 }
 
 .slider img {
@@ -400,7 +399,15 @@ body {
 }
 
 .slider .slider-title {
-  display: none;
+  padding: 4rem !important;
+  display: block !important;
+}
+
+.slider .slider-title h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: #333333;
 }
 
 .fa-arrow-left-long {
@@ -418,7 +425,7 @@ body {
 }
 
 .glide__arrow--left {
-  margin-left: 11%;
+  margin-left: 7%;
   border: none !important;
   background-color: transparent !important;
   -webkit-box-shadow: none !important;
@@ -426,7 +433,7 @@ body {
 }
 
 .glide__arrow--right {
-  margin-right: 11%;
+  margin-right: 7%;
   border: none !important;
   background-color: transparent !important;
   -webkit-box-shadow: none !important;
@@ -912,16 +919,6 @@ body {
   .slider img {
     width: 100%;
   }
-  .slider-title {
-    padding: 4rem !important;
-    display: block !important;
-  }
-  .slider-title h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: 700;
-    color: #333333;
-  }
   .fa-arrow-right-long {
     background-color: #FFFFFF;
     padding: 0.3125rem !important;
@@ -1116,6 +1113,18 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1520px) {
+  .examples__content .card-text {
+    min-width: 26rem !important;
+  }
+  .examples__content img {
+    max-width: 450px;
+  }
+  .second-card {
+    margin-left: 12vw !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

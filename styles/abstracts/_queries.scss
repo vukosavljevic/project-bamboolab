@@ -1,6 +1,7 @@
 $breakpoint--xs: 374px;
 $breakpoint--sm: 768px;
 $breakpoint--md: 1280px;
+$breakpoint--lg: 1520px;
 
 @include breakpoint-min-max($breakpoint--xs, $breakpoint--sm) {
 
@@ -192,6 +193,7 @@ $breakpoint--md: 1280px;
     .card-text {
         padding: 0 1.625rem 1.625rem 1.625rem !important;
     }
+
     .card-responsive {
         display: flex;
         flex-flow: wrap;
@@ -210,18 +212,6 @@ $breakpoint--md: 1280px;
 
         img {
             width: 100%;
-        }
-    }
-
-    .slider-title {
-        padding: 4rem !important;
-        display: block !important;
-
-        h1 {
-            font-size: 2.5rem;
-            text-align: center;
-            font-weight: 700;
-            color: $color--black;
         }
     }
 
@@ -387,9 +377,10 @@ $breakpoint--md: 1280px;
     .card-text {
         padding: 0 0 2.625rem 0 !important;
     }
+
     .card-responsive {
         display: flex;
-        align-items: center ;
+        align-items: center;
         flex-flow: wrap;
         flex-direction: column-reverse;
     }
@@ -397,10 +388,12 @@ $breakpoint--md: 1280px;
     .button {
         display: none;
     }
-    .card-text{
+
+    .card-text {
         justify-content: center !important;
         max-width: 40rem;
     }
+
     .information__content {
         .navbar__logo {
             justify-content: center;
@@ -412,9 +405,9 @@ $breakpoint--md: 1280px;
 
     .information__content-flex {
         display: grid !important;
-            grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 0 !important;
-        gap:0 !important;
+        gap: 0 !important;
 
         .single-card {
             text-align: center !important;
@@ -427,12 +420,27 @@ $breakpoint--md: 1280px;
             text-align: center !important;
             margin: 0 !important;
             display: block !important;
-            margin-bottom:2rem !important;
+            margin-bottom: 2rem !important;
         }
     }
+
     .second-card_icons {
         justify-content: center;
         margin-bottom: 2rem;
     }
-    
+
+}
+
+@include breakpoint-min-max($breakpoint--md, $breakpoint--lg) {
+    .examples__content{
+        .card-text{
+            min-width:26rem !important;
+        }
+        img{
+            max-width: 450px;
+        }
+    }
+    .second-card{
+        margin-left:12vw!important;
+    }
 }
