@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./styles/vendors/glide.core.css">
     <link rel="stylesheet" href="./styles/vendors/glide.theme.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/72f3874b8b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Pandoo</title>
 </head>
 
@@ -68,7 +70,7 @@
     </header>
     <section class="hero">
         <div class="hero-wrapper">
-            <div class="hero-section__content">
+            <div class="hero-section__content" data-aos="fade-right">
                 <div class="hero-section__title">
                     <h1>Hero Title</h1>
                 </div>
@@ -99,7 +101,7 @@
                 <h1>Section Title</h1>
             </div>
             <div class="cards">
-                <div class="single-card">
+                <div class="single-card" data-aos="flip-up">
                     <div class="single-card__title">
                         <div class="image-wrapper">
                             <div class="single-card__bg">
@@ -165,7 +167,7 @@
                         bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the
                         workers.</p>
                 </div>
-                <div class="single-card">
+                <div class="single-card" data-aos="flip-up" data-aos-duration="500">
                     <div class="single-card__title">
                         <div class="image-wrapper">
                             <div class="single-card__bg">
@@ -205,7 +207,7 @@
                         bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the
                         workers.</p>
                 </div>
-                <div class="single-card">
+                <div class="single-card" data-aos="flip-up" data-aos-duration="750"">
                     <div class="single-card__title">
                         <div class="image-wrapper">  <div class="single-card__bg">
                             <svg width="60" height="60" viewBox="0 0 51 66" fill="none"
@@ -281,7 +283,7 @@
                                 masses, not from some farcical aquatic ceremony.</p>
                     </div>
                     <div class="examples__content-text">
-                        <div class="responsive-image">
+                        <div class="responsive-image" data-aos="fade-left">
                             <img src="./img/Rectangle 6.png" alt="">
                         </div>
                     </div>
@@ -290,7 +292,7 @@
             <div class="examples__content-spacing">
                 <div class="examples__content-text card">
                     <div class="examples__content-text">
-                        <div class="responsive-image">
+                        <div class="responsive-image" data-aos="fade-right">
                             <img class="card-image" src="./img/Rectangle 7.png" alt="">
                         </div>
                     </div>
@@ -513,6 +515,9 @@
   }
        }).mount()
     </script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
