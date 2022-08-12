@@ -172,6 +172,7 @@ $breakpoint--md: 1280px;
 
     .examples__content-text,
     .examples__content-spacing {
+        align-items: center;
         padding: 0 !important;
         min-width: 16.25rem !important;
         font-size: 0.8225rem !important;
@@ -191,7 +192,6 @@ $breakpoint--md: 1280px;
     .card-text {
         padding: 0 1.625rem 1.625rem 1.625rem !important;
     }
-
     .card-responsive {
         display: flex;
         flex-flow: wrap;
@@ -370,7 +370,6 @@ $breakpoint--md: 1280px;
     .examples__content-text,
     .examples__content-spacing {
         padding: 0 !important;
-        min-width: 18.25rem !important;
         font-size: 0.8225rem !important;
         flex-wrap: wrap;
 
@@ -386,11 +385,11 @@ $breakpoint--md: 1280px;
     }
 
     .card-text {
-        padding: 0 1.625rem 1.625rem 1.625rem !important;
+        padding: 0 0 2.625rem 0 !important;
     }
-
     .card-responsive {
         display: flex;
+        align-items: center ;
         flex-flow: wrap;
         flex-direction: column-reverse;
     }
@@ -398,7 +397,10 @@ $breakpoint--md: 1280px;
     .button {
         display: none;
     }
-
+    .card-text{
+        justify-content: center !important;
+        max-width: 40rem;
+    }
     .information__content {
         .navbar__logo {
             justify-content: center;
@@ -425,11 +427,9 @@ $breakpoint--md: 1280px;
             text-align: center !important;
             margin: 0 !important;
             display: block !important;
-            width: 100%;
             margin-bottom:2rem !important;
         }
     }
-
     .second-card_icons {
         justify-content: center;
         margin-bottom: 2rem;

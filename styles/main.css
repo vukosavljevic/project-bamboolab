@@ -869,6 +869,9 @@ body {
   }
   .examples__content-text,
   .examples__content-spacing {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 !important;
     min-width: 16.25rem !important;
     font-size: 0.8225rem !important;
@@ -1039,7 +1042,6 @@ body {
   .examples__content-text,
   .examples__content-spacing {
     padding: 0 !important;
-    min-width: 18.25rem !important;
     font-size: 0.8225rem !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1056,12 +1058,15 @@ body {
     font-size: 1rem !important;
   }
   .card-text {
-    padding: 0 1.625rem 1.625rem 1.625rem !important;
+    padding: 0 0 2.625rem 0 !important;
   }
   .card-responsive {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-flow: wrap;
         flex-flow: wrap;
     -webkit-box-orient: vertical;
@@ -1071,6 +1076,12 @@ body {
   }
   .button {
     display: none;
+  }
+  .card-text {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    max-width: 40rem;
   }
   .information__content .navbar__logo {
     -webkit-box-pack: center;
@@ -1098,7 +1109,6 @@ body {
     text-align: center !important;
     margin: 0 !important;
     display: block !important;
-    width: 100%;
     margin-bottom: 2rem !important;
   }
   .second-card_icons {
