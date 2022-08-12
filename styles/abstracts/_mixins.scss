@@ -37,6 +37,10 @@
     font-weight: 600;
     padding-bottom: 0.4375rem;
 }
+@mixin arrowBoth{
+    background-color: $color--white;
+    padding: 0.3125rem !important;
+}
 @mixin breakpoint-min-max($bp1, $bp2) {
     @media (min-width: $bp1) and (max-width: $bp2) {
         @content;

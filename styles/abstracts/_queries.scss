@@ -12,7 +12,7 @@ $breakpoint--md: 1280px;
     }
 
     .navbar {
-        height: 34px !important;
+        height: 2.125rem !important;
     }
 
     .navbar__logo {
@@ -42,7 +42,6 @@ $breakpoint--md: 1280px;
         position: fixed;
         left: -110%;
         top: 4.375rem;
-        gap: 0;
         flex-direction: column;
         background-color: $color--white;
         width: 100%;
@@ -227,13 +226,11 @@ $breakpoint--md: 1280px;
     }
 
     .fa-arrow-right-long {
-        background-color: $color--white;
-        padding: 5px !important;
+        @include arrowBoth();
     }
 
     .fa-arrow-left-long {
-        background-color: $color--white;
-        padding: 5px !important;
+        @include arrowBoth();
     }
 
     .glide__arrow--right {
@@ -326,4 +323,116 @@ $breakpoint--md: 1280px;
             margin-right: 0 !important;
         }
     }
+}
+
+@include breakpoint-min-max($breakpoint--sm, $breakpoint--md) {
+    .single-card {
+        min-height: 200px !important;
+        min-width: 180px !important;
+    }
+
+    .about__content-title {
+        margin-bottom: 3rem !important;
+    }
+
+    .about .about__content .cards {
+        min-height: 80% !important;
+        min-width: 80% !important;
+        padding: 1rem !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .examples {
+        width: 100%;
+        margin-top: 0 !important;
+        height: 100% !important;
+
+        img {
+            max-width: 100%;
+            height: auto !important;
+            border: none !important;
+            border-bottom: 1rem solid $color--green  !important;
+        }
+    }
+
+    .responsive-image {
+        text-align: center; //picture in hero section
+    }
+
+    .examples__content {
+        padding: 0 !important;
+    }
+
+    .examples__content-title {
+        padding: 4rem !important;
+    }
+
+    .examples__content-text,
+    .examples__content-spacing {
+        padding: 0 !important;
+        min-width: 18.25rem !important;
+        font-size: 0.8225rem !important;
+        flex-wrap: wrap;
+
+        .card {
+            justify-content: center;
+        }
+
+        .card h1 {
+            text-align: center;
+            font-size: 1rem !important;
+        }
+
+    }
+
+    .card-text {
+        padding: 0 1.625rem 1.625rem 1.625rem !important;
+    }
+
+    .card-responsive {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .information__content {
+        .navbar__logo {
+            justify-content: center;
+            margin: 0 !important;
+            margin-bottom: 2rem !important;
+            padding: 0 !important;
+        }
+    }
+
+    .information__content-flex {
+        display: grid !important;
+            grid-template-columns: repeat(2,1fr);
+        margin-top: 0 !important;
+        gap:0 !important;
+
+        .single-card {
+            text-align: center !important;
+            margin: 0 !important;
+            width: 100%;
+        }
+
+        .second-card {
+            margin-left: 0px !important;
+            text-align: center !important;
+            margin: 0 !important;
+            display: block !important;
+            width: 100%;
+            margin-bottom:2rem !important;
+        }
+    }
+
+    .second-card_icons {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    
 }
