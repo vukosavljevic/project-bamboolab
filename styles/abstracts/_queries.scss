@@ -315,7 +315,7 @@ $breakpoint--lg: 1520px;
     }
 }
 
-@include breakpoint-min-max($breakpoint--sm, $breakpoint--md) {
+@include breakpoint-min-max($breakpoint--sm + 1px, $breakpoint--md ) {
     .single-card {
         min-height: 200px !important;
         min-width: 180px !important;
@@ -431,7 +431,7 @@ $breakpoint--lg: 1520px;
 
 }
 
-@include breakpoint-min-max($breakpoint--md, $breakpoint--lg) {
+@include breakpoint-min-max($breakpoint--md + 1px, $breakpoint--lg) {
     .examples__content{
         .card-text{
             min-width:26rem !important;

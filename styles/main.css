@@ -1002,7 +1002,7 @@ body {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 769px) and (max-width: 1280px) {
   .single-card {
     min-height: 200px !important;
     min-width: 180px !important;
@@ -1116,7 +1116,7 @@ body {
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1520px) {
+@media (min-width: 1281px) and (max-width: 1520px) {
   .examples__content .card-text {
     min-width: 26rem !important;
   }
