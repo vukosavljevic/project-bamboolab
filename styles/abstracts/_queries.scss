@@ -5,8 +5,7 @@ $breakpoint--lg: 1520px;
 
 @include breakpoint-min-max($breakpoint--xs, $breakpoint--sm) {
 
-    //navbar//
-    .fixed {
+    .navbar-fixed {
         z-index: 100;
         width: 100%;
         position: fixed;
@@ -85,8 +84,6 @@ $breakpoint--lg: 1520px;
         display: none;
     }
 
-    //navbar//
-    //ABOUT//
     .cards {
         padding: 1.92rem !important;
         display: block !important;
@@ -114,14 +111,11 @@ $breakpoint--lg: 1520px;
         }
 
         .image-wrapper {
-            width: 100%;
             display: flex;
             justify-content: center;
         }
     }
 
-    //ABOUT//
-    //hero//
     .hero {
         height: 29.5625rem !important;
 
@@ -141,11 +135,8 @@ $breakpoint--lg: 1520px;
 
     .hero-responsive {
         display: block;
-        animation-name: come-up;
-        animation-duration: 2s;
     }
 
-    //examples
     .examples {
         width: 100%;
         margin-top: 0 !important;
@@ -160,7 +151,7 @@ $breakpoint--lg: 1520px;
     }
 
     .responsive-image {
-        text-align: center; //picture in hero section
+        text-align: center;
     }
 
     .examples__content {
@@ -317,8 +308,8 @@ $breakpoint--lg: 1520px;
 
 @include breakpoint-min-max($breakpoint--sm + 1px, $breakpoint--md ) {
     .single-card {
-        min-height: 200px !important;
-        min-width: 180px !important;
+        min-height: 12.5rem !important;
+        min-width: 11.25rem !important;
     }
 
     .about__content-title {
@@ -346,7 +337,7 @@ $breakpoint--lg: 1520px;
     }
 
     .responsive-image {
-        text-align: center; //picture in hero section
+        text-align: center;
     }
 
     .examples__content {
@@ -432,15 +423,17 @@ $breakpoint--lg: 1520px;
 }
 
 @include breakpoint-min-max($breakpoint--md + 1px, $breakpoint--lg) {
-    .examples__content{
-        .card-text{
-            min-width:26rem !important;
+    .examples__content {
+        .card-text {
+            min-width: 26rem !important;
         }
-        img{
-            max-width: 450px;
+
+        img {
+            max-width: 28.125rem;
         }
     }
-    .second-card{
-        margin-left:12vw!important;
+
+    .second-card {
+        margin-left: 12vw !important;
     }
 }

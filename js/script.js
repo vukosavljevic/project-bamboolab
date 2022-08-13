@@ -19,7 +19,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
     getButton.classList.toggle("active");
-    header.classList.toggle("fixed");
+    header.classList.toggle("navbar-fixed");
     hero.classList.toggle("deactivate");
     heroResponsive.classList.toggle("deactivate");
     about.classList.toggle("deactivate");
