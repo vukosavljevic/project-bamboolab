@@ -33,7 +33,10 @@
     font-size: 1rem;
     font-weight: 300;
 }
-
+@mixin spaceReset{
+    padding : 0 !important;
+    margin: 0 !important;
+}
 @mixin headingFooter {
     font-size: 0.9rem;
     font-weight: 600;

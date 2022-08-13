@@ -8,8 +8,11 @@
     $font-weight--midsmall: 500;
     $font-weight--mid : 600;
     $font-weight--large : 700;
-    $circle : 50px;
+    $circle : 3.125rem;
+    $space--reset: 0 !important;
 
     $background--color: $color--black;
     $font--color: $color--white;
     $border-radius--color: $color--green;
+    $margin--reset: $space--reset;
+    $padding--reset: $space--reset;

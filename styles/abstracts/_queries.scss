@@ -1,3 +1,4 @@
+
 $breakpoint--xs: 374px;
 $breakpoint--sm: 768px;
 $breakpoint--md: 1280px;
@@ -92,7 +93,7 @@ $breakpoint--lg: 1520px;
             min-height: 12rem !important;
             position: relative !important;
             margin-top: 6rem !important;
-            font-weight: 300 !important;
+            font-weight: $font-weight--small  !important;
 
         }
 
@@ -120,7 +121,7 @@ $breakpoint--lg: 1520px;
         height: 29.5625rem !important;
 
         .hero-wrapper {
-            padding: 0;
+            padding: $padding--reset;
         }
     }
 
@@ -139,7 +140,7 @@ $breakpoint--lg: 1520px;
 
     .examples {
         width: 100%;
-        margin-top: 0 !important;
+        margin-top: $margin--reset;
         height: 100% !important;
 
         img {
@@ -155,7 +156,7 @@ $breakpoint--lg: 1520px;
     }
 
     .examples__content {
-        padding: 0 !important;
+        @include spaceReset();
     }
 
     .examples__content-title {
@@ -165,7 +166,7 @@ $breakpoint--lg: 1520px;
     .examples__content-text,
     .examples__content-spacing {
         align-items: center;
-        padding: 0 !important;
+        @include spaceReset();
         min-width: 16.25rem !important;
         font-size: 0.8225rem !important;
         flex-wrap: wrap;
@@ -199,7 +200,7 @@ $breakpoint--lg: 1520px;
 
     //slider
     .slider {
-        margin: 0 !important;
+        margin: $margin--reset;
 
         img {
             width: 100%;
@@ -215,19 +216,16 @@ $breakpoint--lg: 1520px;
     }
 
     .glide__arrow--right {
-        margin-right: 0% !important;
+        margin-right: $margin--reset;
     }
 
     .glide__arrow--left {
-        margin-left: 0% !important;
+        margin-left: $margin--reset;
     }
 
-    //slider
-
-    // contact-form
     .contact-form {
         p {
-            padding: 0 !important;
+            padding: $padding--reset;
             margin-top: 6vw;
             margin-bottom: 6vw;
         }
@@ -243,7 +241,7 @@ $breakpoint--lg: 1520px;
             a {
 
                 border-radius: 0 !important;
-                margin: 0 !important;
+                margin: $margin--reset;
                 border-top-right-radius: 10px !important;
                 border-bottom-right-radius: 10px !important;
                 outline: #87DE87;
@@ -251,32 +249,28 @@ $breakpoint--lg: 1520px;
         }
     }
 
-    // contact - form
-
-    // information
     .information__content {
         .navbar__logo {
             justify-content: center;
-            margin: 0 !important;
+            @include spaceReset();
             margin-bottom: 2rem !important;
-            padding: 0 !important;
         }
     }
 
     .information__content-flex {
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 0 !important;
+        margin-top: $margin--reset;
 
         .single-card {
             text-align: center !important;
-            margin: 0 !important;
+            margin: $margin--reset;
             width: 100%;
         }
 
         .second-card {
             text-align: center !important;
-            margin: 0 !important;
+            margin: $margin--reset;
             display: block !important;
             width: 100%;
         }
@@ -287,21 +281,17 @@ $breakpoint--lg: 1520px;
         margin-bottom: 2rem;
     }
 
-    //information
-
-    //footer
-
     .footer__content {
         text-align: center;
         flex-direction: column-reverse !important;
 
         p {
-            margin: 0 !important;
+            margin: $margin--reset;
             padding-top: 0.85rem;
         }
 
         ul {
-            margin-right: 0 !important;
+            margin-right: $margin--reset;
         }
     }
 }
@@ -325,7 +315,7 @@ $breakpoint--lg: 1520px;
 
     .examples {
         width: 100%;
-        margin-top: 0 !important;
+        margin-top: $margin--reset;
         height: 100% !important;
 
         img {
@@ -341,7 +331,7 @@ $breakpoint--lg: 1520px;
     }
 
     .examples__content {
-        padding: 0 !important;
+        padding: $padding--reset;
     }
 
     .examples__content-title {
@@ -350,7 +340,7 @@ $breakpoint--lg: 1520px;
 
     .examples__content-text,
     .examples__content-spacing {
-        padding: 0 !important;
+        @include spaceReset();
         font-size: 0.8225rem !important;
         flex-wrap: wrap;
 
@@ -388,28 +378,26 @@ $breakpoint--lg: 1520px;
     .information__content {
         .navbar__logo {
             justify-content: center;
-            margin: 0 !important;
+            @include spaceReset();
             margin-bottom: 2rem !important;
-            padding: 0 !important;
         }
     }
 
     .information__content-flex {
         display: grid !important;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: 0 !important;
+        margin-top: $margin--reset;
         gap: 0 !important;
 
         .single-card {
             text-align: center !important;
-            margin: 0 !important;
+            margin: $margin--reset;
             width: 100%;
         }
 
         .second-card {
-            margin-left: 0px !important;
             text-align: center !important;
-            margin: 0 !important;
+            margin: $margin--reset;
             display: block !important;
             margin-bottom: 2rem !important;
         }

@@ -328,7 +328,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: #87DE87;
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 
 .about .about__content .cards .single-card .single-card__title {
@@ -657,7 +657,7 @@ body {
   width: 40px;
   height: 40px;
   background-color: #333333;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,7 +813,7 @@ body {
     min-height: 12rem !important;
     position: relative !important;
     margin-top: 6rem !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
   }
   .cards .single-card__title-text {
     margin-top: 1rem !important;
@@ -838,7 +838,7 @@ body {
     height: 29.5625rem !important;
   }
   .hero .hero-wrapper {
-    padding: 0;
+    padding: 0 !important;
   }
   .hero-section__text {
     font-size: 1rem !important;
@@ -866,6 +866,7 @@ body {
   }
   .examples__content {
     padding: 0 !important;
+    margin: 0 !important;
   }
   .examples__content-title {
     padding: 4rem !important;
@@ -876,6 +877,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     padding: 0 !important;
+    margin: 0 !important;
     min-width: 16.25rem !important;
     font-size: 0.8225rem !important;
     -ms-flex-wrap: wrap;
@@ -924,10 +926,10 @@ body {
     padding: 0.3125rem !important;
   }
   .glide__arrow--right {
-    margin-right: 0% !important;
+    margin-right: 0 !important;
   }
   .glide__arrow--left {
-    margin-left: 0% !important;
+    margin-left: 0 !important;
   }
   .contact-form p {
     padding: 0 !important;
@@ -953,9 +955,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0 !important;
     margin: 0 !important;
     margin-bottom: 2rem !important;
-    padding: 0 !important;
   }
   .information__content-flex {
     -ms-flex-wrap: wrap;
@@ -1035,6 +1037,7 @@ body {
   .examples__content-text,
   .examples__content-spacing {
     padding: 0 !important;
+    margin: 0 !important;
     font-size: 0.8225rem !important;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1080,9 +1083,9 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0 !important;
     margin: 0 !important;
     margin-bottom: 2rem !important;
-    padding: 0 !important;
   }
   .information__content-flex {
     display: -ms-grid !important;
@@ -1098,7 +1101,6 @@ body {
     width: 100%;
   }
   .information__content-flex .second-card {
-    margin-left: 0px !important;
     text-align: center !important;
     margin: 0 !important;
     display: block !important;
