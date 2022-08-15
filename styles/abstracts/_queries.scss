@@ -82,7 +82,7 @@ $breakpoint--lg: 1520px;
     }
 
     .deactivate {
-        display: none;
+        display: none !important;
     }
 
     .cards {
@@ -119,7 +119,7 @@ $breakpoint--lg: 1520px;
 
     .hero {
         height: 29.5625rem !important;
-
+        background-position:center;
         .hero-wrapper {
             padding: $padding--reset;
         }
